@@ -1,7 +1,17 @@
+<p align="center">
+  <img src="assets/logo.png" alt="VisualLogic.ai Logo" width="400"/>
+</p>
+
 # VisualLogic.ai
 
-> An AI-native programming system based on VL (Visual Logic),  
+> An AI-native programming system based on VL (Visual Logic),
 > where Language ⇄ Graph ⇄ AI Agents are fully reversible.
+
+<div style="text-align: center;">
+  <a href="https://editor.visuallogic.ai/" style="font-size: 16px; color: #007bff;">🌐 Tool Website</a> |
+  <a href="https://www.youtube.com/playlist?list=PLJE6c8wBknRnCZIRv_VFa1dYswTSqoW21" style="font-size: 16px; color: #ff0000;">🎥 YouTube Playlist</a> |
+  <a href="https://discord.com/invite/KdaVtR7pzv" style="font-size: 16px; color: #7289da;">💬 Discord Community</a>
+</div>
 
 ---
 
