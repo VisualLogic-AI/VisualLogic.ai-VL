@@ -1,0 +1,793 @@
+```
+// VL_VERSION:1.92
+
+<Theme-Default>
+
+# Design Tokens
+
+// ==================== 品牌色系 (Brand) ====================
+
+<Color-Brand> colorBrandPrimary:#0052D9 colorBrandPrimaryHover:#366EF4 colorBrandPrimaryActive:#004AAD colorBrandPrimaryLight:#E9F0FE colorBrandPrimaryDisabled:#B5C7FF colorBrandSecondary:#13C2C2 colorBrandSecondaryHover:#36CFC9 colorBrandSecondaryActive:#08979C colorBrandAccent:#F5222D colorBrandAccentHover:#FF4D4F colorBrandAccentActive:#CF1322
+
+// ==================== 状态色系 (Status) ====================
+
+<Color-Status> colorSuccess:#52C41A colorSuccessLight:#F6FFED colorSuccessHover:#73D13D colorSuccessActive:#389E0D colorWarning:#FAAD14 colorWarningLight:#FFFBE6 colorWarningHover:#FFC53D colorWarningActive:#D48806 colorError:#FF4D4F colorErrorLight:#FFF2F0 colorErrorHover:#FF7875 colorErrorActive:#D9363E colorInfo:#1890FF colorInfoLight:#E6F7FF colorInfoHover:#40A9FF colorInfoActive:#096DD9
+
+// ==================== 中性色系 (Neutral) ====================
+
+<Color-Neutral> colorNeutral100:#FFFFFF colorNeutral200:#FAFAFA colorNeutral300:#F5F5F5 colorNeutral400:#F0F0F0 colorNeutral500:#D9D9D9 colorNeutral600:#BFBFBF colorNeutral700:#8C8C8C colorNeutral800:#595959 colorNeutral900:#262626 colorNeutral1000:#000000
+
+// ==================== 背景颜色 (Background) ====================
+
+<Color-Background> colorBgPage:#F5F5F5 colorBgBody:#FFFFFF colorBgPrimary:#FFFFFF colorBgSecondary:#FAFAFA colorBgTertiary:#F5F5F5 colorBgContainer:#FFFFFF colorBgContainerSecondary:#FAFAFA colorBgElevated:#FFFFFF colorBgDisabled:#F5F5F5 colorBgHover:#F5F5F5 colorBgActive:#E6E6E6 colorBgSelected:#E9F0FE colorBgMask:rgba(0,0,0,0.45) colorBgTransparent:rgba(255,255,255,0)
+
+// ==================== 文本颜色 (Text) ====================
+
+<Color-Text> colorTextDefault:#262626 colorTextPrimary:#262626 colorTextSecondary:#595959 colorTextTertiary:#8C8C8C colorTextQuaternary:#BFBFBF colorTextDisabled:#BFBFBF colorTextInverse:#FFFFFF colorTextLink:#0052D9 colorTextLinkHover:#366EF4 colorTextLinkActive:#004AAD colorTextPlaceholder:#BFBFBF colorTextSelected:#0052D9 colorTextOnPrimary:#FFFFFF colorTextOnStatus:#FFFFFF
+
+// ==================== 边框颜色 (Border) ====================
+
+<Color-Border> colorBorderDefault:#D9D9D9 colorBorderSubtle:#E8E8E8 colorBorderStrong:#BFBFBF colorBorderLight:#F0F0F0 colorBorderPrimary:#0052D9 colorBorderSuccess:#52C41A colorBorderWarning:#FAAD14 colorBorderError:#FF4D4F colorBorderInfo:#1890FF colorBorderFocus:#366EF4 colorBorderHover:#366EF4 colorBorderActive:#004AAD colorBorderDisabled:#D9D9D9
+
+// ==================== 扩展色系 (Extension) ====================
+
+<Color-Extension> colorExtensionCyan:#13C2C2 colorExtensionCyanLight:#E6FFFB colorExtensionCyanDark:#08979C colorExtensionPurple:#722ED1 colorExtensionPurpleLight:#F9F0FF colorExtensionPurpleDark:#531DAB colorExtensionPink:#EB2F96 colorExtensionPinkLight:#FFF0F6 colorExtensionPinkDark:#C41D7F colorExtensionOrange:#FA8C16 colorExtensionOrangeLight:#FFF7E6 colorExtensionOrangeDark:#D46B08 colorExtensionTeal:#00897B colorExtensionTealLight:#E6F7F5 colorExtensionTealDark:#006D62 colorExtensionIndigo:#3F51B5 colorExtensionIndigoLight:#E8EAF6 colorExtensionIndigoDark:#303F9F colorExtensionLime:#A0D911 colorExtensionLimeLight:#FCFFE6 colorExtensionLimeDark:#7CB305 colorExtensionAmber:#FADB14 colorExtensionAmberLight:#FFFB8F colorExtensionAmberDark:#D4B106
+
+// ==================== 字体族 (Font Family) ====================
+
+<Typography-FontFamily> fontFamilyBase:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif fontFamilyMono:SFMono-Regular, Consolas, 'Liberation Mono', Menlo, Courier, monospace fontFamilyHeading:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif
+
+// ==================== 字号 (Font Size) ====================
+
+<Typography-FontSize> fontSizeXs:10px fontSizeSm:12px fontSizeBase:14px fontSizeMd:16px fontSizeLg:18px fontSizeXl:20px fontSize2xl:24px fontSize3xl:28px fontSize4xl:32px fontSize5xl:36px fontSize6xl:48px
+
+// ==================== 字重 (Font Weight) ====================
+
+<Typography-FontWeight> fontWeightLight:300 fontWeightRegular:400 fontWeightNormal:400 fontWeightMedium:500 fontWeightSemibold:600 fontWeightBold:700 fontWeightExtrabold:800
+
+// ==================== 行高 (Line Height) ====================
+
+<Typography-LineHeight> lineHeightTight:1.25 lineHeightSnug:1.375 lineHeightNormal:1.5 lineHeightRelaxed:1.625 lineHeightLoose:2
+
+// ==================== 字间距 (Letter Spacing) ====================
+
+<Typography-LetterSpacing> letterSpacingNormal:0 letterSpacingWide:0.025em letterSpacingWider:0.05em letterSpacingWidest:0.1em
+
+// ==================== 边框宽度 (Border Width) ====================
+
+<Border-Width> borderWidthNone:0px borderWidthThin:1px borderWidthBase:1px borderWidthMedium:2px borderWidthThick:3px borderWidthHeavy:4px
+
+// ==================== 边框样式 (Border Style) ====================
+
+<Border-Style> borderStyleNone:none borderStyleSolid:solid borderStyleDashed:dashed borderStyleDotted:dotted
+
+// ==================== 圆角 (Border Radius) ====================
+
+<Border-Radius> radiusNone:0px radiusXs:2px radiusSm:4px radiusBase:6px radiusMd:8px radiusLg:12px radiusXl:16px radius2xl:24px radiusPill:9999px radiusFull:9999px
+
+// ==================== 阴影 (Shadows) ====================
+
+<Shadow-Base> shadowNone:none shadowXs:0 1px 2px rgba(0,0,0,0.05) shadowSm:0 1px 3px rgba(0,0,0,0.1) shadowBase:0 1px 3px rgba(0,0,0,0.1), 0 1px 2px rgba(0,0,0,0.06) shadowMd:0 4px 6px rgba(0,0,0,0.07) shadowLg:0 10px 15px rgba(0,0,0,0.1) shadowXl:0 20px 25px rgba(0,0,0,0.1) shadow2xl:0 25px 50px rgba(0,0,0,0.25) shadowInner:inset 0 2px 4px rgba(0,0,0,0.06) shadowCard:0 2px 8px rgba(0,0,0,0.08) shadowCardHover:0 4px 16px rgba(0,0,0,0.12) shadowPopup:0 4px 12px rgba(0,0,0,0.15) shadowModal:0 12px 28px rgba(0,0,0,0.12) shadowDropdown:0 6px 16px rgba(0,0,0,0.08) shadowFocus:0 0 0 3px rgba(0,82,217,0.2) shadowFocusPrimary:0 0 0 3px rgba(0,82,217,0.2) shadowFocusError:0 0 0 3px rgba(255,77,79,0.2) shadowFocusWarning:0 0 0 3px rgba(250,173,20,0.2) shadowFocusSuccess:0 0 0 3px rgba(82,196,26,0.2) shadowElevation1:0 2px 4px rgba(0,0,0,0.1) shadowElevation2:0 4px 8px rgba(0,0,0,0.12) shadowElevation3:0 8px 16px rgba(0,0,0,0.15) shadowElevation4:0 16px 32px rgba(0,0,0,0.18)
+
+// ==================== 间距刻度 (Spacing Scale) ====================
+
+<Spacing-Scale> spacing0:0px spacing1:4px spacing2:8px spacing3:12px spacing4:16px spacing5:20px spacing6:24px spacing7:28px spacing8:32px spacing10:40px spacing12:48px spacing16:64px spacing20:80px spacing24:96px spacing32:128px
+
+// ==================== 语义化间距 (Semantic Spacing) ====================
+
+<Spacing-Semantic> spacingXs:4px spacingSm:8px spacingBase:16px spacingMd:24px spacingLg:32px spacingXl:48px spacing2xlSemantic:64px spacing3xlSemantic:96px
+
+// ==================== 高度 (Height) ====================
+
+<Size-Height> heightXs:20px heightSm:24px heightBase:32px heightMd:40px heightLg:48px heightXl:56px height2xl:64px
+
+// ==================== 宽度 (Width) ====================
+
+<Size-Width> widthXs:64px widthSm:128px widthBase:192px widthMd:256px widthLg:384px widthXl:512px width2xl:672px width3xl:768px width4xl:896px width5xl:1024px widthFull:100% widthScreen:100vw
+
+// ==================== 最大宽度 (Max Width) ====================
+
+<Size-MaxWidth> maxWidthXs:320px maxWidthSm:384px maxWidthMd:448px maxWidthLg:512px maxWidthXl:576px maxWidth2xl:672px maxWidth3xl:768px maxWidth4xl:896px maxWidth5xl:1024px maxWidth6xl:1152px maxWidth7xl:1280px maxWidthPage:1200px maxWidthFull:100%
+
+// ==================== 动画时长 (Duration) ====================
+
+<Transition-Duration> durationInstant:0ms duration75:75ms duration100:100ms duration150:150ms duration200:200ms duration300:300ms duration500:500ms duration700:700ms duration1000:1000ms
+
+// ==================== 缓动函数 (Timing Function) ====================
+
+<Transition-Timing> timingLinear:linear timingEase:ease timingEaseIn:cubic-bezier(0.4,0,1,1) timingEaseOut:cubic-bezier(0,0,0.2,1) timingEaseInOut:cubic-bezier(0.4,0,0.2,1) timingBounce:cubic-bezier(0.68,-0.55,0.265,1.55)
+
+// ==================== Z-Index 层级 (Z-Index) ====================
+
+<ZIndex-Base> zIndexHide:-1 zIndexAuto:auto zIndexBase:0 zIndex10:10 zIndex20:20 zIndex30:30 zIndex40:40 zIndex50:50 zIndexDropdown:1000 zIndexSticky:1020 zIndexFixed:1030 zIndexModalBackdrop:1040 zIndexModal:1050 zIndexPopover:1060 zIndexTooltip:1070 zIndexToast:1080
+
+// ==================== 透明度 (Opacity) ====================
+
+<Opacity-Base> opacity0:0 opacity5:0.05 opacity10:0.1 opacity20:0.2 opacity25:0.25 opacity30:0.3 opacity40:0.4 opacity50:0.5 opacity60:0.6 opacity70:0.7 opacity75:0.75 opacity80:0.8 opacity90:0.9 opacity95:0.95 opacity100:1
+
+// ══════════════════════════════════════════════════════════════
+//                        LAYOUT TOKENS
+// ══════════════════════════════════════════════════════════════
+
+// ==================== 页面布局 (Page Layout) ====================
+
+<Layout-Page> layoutPageMaxWidth:1200px layoutPageMinHeight:100vh layoutContainerPadding:24px layoutContainerPaddingMobile:16px
+
+// ==================== 侧边栏布局 (Sidebar Layout) ====================
+
+<Layout-Sidebar> layoutSidebarWidth:240px layoutSidebarWidthSm:200px layoutSidebarWidthLg:280px layoutSidebarCollapsed:64px
+
+// ==================== 顶栏/底栏布局 (Header/Footer Layout) ====================
+
+<Layout-HeaderFooter> layoutHeaderHeight:64px layoutHeaderHeightSm:56px layoutHeaderHeightLg:72px layoutFooterHeight:60px layoutFooterHeightSm:48px
+
+// ==================== 模态框布局 (Modal Layout) ====================
+
+<Layout-Modal> layoutModalWidthSm:400px layoutModalWidthMd:520px layoutModalWidthLg:720px layoutModalWidthXl:900px layoutModalWidthFull:90vw
+
+// ==================== 抽屉布局 (Drawer Layout) ====================
+
+<Layout-Drawer> layoutDrawerWidthSm:256px layoutDrawerWidthMd:320px layoutDrawerWidthLg:400px layoutDrawerWidthXl:500px
+
+// ==================== 栅格布局 (Grid Layout) ====================
+
+<Layout-Grid> layoutGridColumns:12 layoutGridGutter:16px layoutGridGutterSm:12px layoutGridGutterLg:24px
+
+// ══════════════════════════════════════════════════════════════
+//                      COMPONENT TOKENS
+// ══════════════════════════════════════════════════════════════
+
+// ==================== 按钮组件 (Button) ====================
+
+<Component-Button> buttonHeightSm:28px buttonHeightBase:32px buttonHeightLg:40px buttonHeightXl:48px buttonPaddingXSm:12px buttonPaddingX:16px buttonPaddingXLg:20px buttonFontWeight:500 buttonBorderRadius:--radiusSm buttonTransition:all 0.2s ease-in-out
+
+// ==================== 输入框组件 (Input) ====================
+
+<Component-Input> inputHeightSm:28px inputHeightBase:32px inputHeightLg:40px inputPaddingX:12px inputPaddingY:6px inputBorderRadius:--radiusSm inputBorderWidth:1px inputTransition:border-color 0.2s, box-shadow 0.2s
+
+// ==================== 卡片组件 (Card) ====================
+
+<Component-Card> cardPaddingSm:16px cardPadding:24px cardPaddingLg:32px cardBorderRadius:--radiusMd cardBorderWidth:1px cardHeaderHeight:56px
+
+// ==================== 模态框组件 (Modal) ====================
+
+<Component-Modal> modalBorderRadius:--radiusLg modalPadding:24px modalHeaderHeight:56px modalFooterHeight:64px
+
+// ==================== 表格组件 (Table) ====================
+
+<Component-Table> tableCellPaddingX:16px tableCellPaddingY:12px tableHeaderHeight:48px tableRowHeight:48px tableBorderWidth:1px tableBorderRadius:--radiusMd
+
+// ==================== 导航组件 (Navbar) ====================
+
+<Component-Navbar> navbarHeight:64px navbarPaddingX:24px navItemHeight:40px navItemPaddingX:16px navItemBorderRadius:--radiusSm
+
+// ==================== 侧边栏组件 (Sidebar) ====================
+
+<Component-Sidebar> sidebarPadding:16px sidebarItemHeight:40px sidebarItemPaddingX:16px sidebarTransition:width 0.3s ease
+
+// ==================== 标签页组件 (Tab) ====================
+
+<Component-Tab> tabHeight:40px tabPaddingX:16px tabBorderRadius:--radiusSm tabBarHeight:44px tabIndicatorHeight:2px
+
+// ==================== 下拉菜单组件 (Dropdown) ====================
+
+<Component-Dropdown> dropdownMinWidth:160px dropdownMaxHeight:256px dropdownPadding:8px dropdownItemHeight:36px dropdownItemPaddingX:12px dropdownBorderRadius:--radiusMd
+
+// ==================== 通知组件 (Toast) ====================
+
+<Component-Toast> toastMinWidth:280px toastMaxWidth:400px toastPadding:16px toastBorderRadius:--radiusMd toastIconSize:20px
+
+// ==================== 加载组件 (Spinner) ====================
+
+<Component-Spinner> spinnerSizeSm:16px spinnerSizeBase:20px spinnerSizeLg:24px spinnerSizeXl:32px
+
+// ==================== 头像组件 (Avatar) ====================
+
+<Component-Avatar> avatarSizeXs:24px avatarSizeSm:32px avatarSizeBase:40px avatarSizeLg:48px avatarSizeXl:64px avatarSize2xl:80px
+
+// ==================== 徽章组件 (Badge) ====================
+
+<Component-Badge> badgeHeight:20px badgeMinWidth:20px badgePaddingX:6px badgeFontSize:12px badgeBorderRadius:10px
+
+// ==================== 分页组件 (Pagination) ====================
+
+<Component-Pagination> paginationItemSizeSm:24px paginationItemSize:32px paginationItemSizeLg:40px paginationGap:4px paginationBorderRadius:--radiusSm
+
+// ==================== 进度条组件 (Progress) ====================
+
+<Component-Progress> progressHeightSm:4px progressHeight:8px progressHeightLg:12px progressBorderRadius:4px progressTransition:width 0.3s ease
+
+// ==================== 滑块组件 (Slider) ====================
+
+<Component-Slider> sliderTrackHeight:4px sliderThumbSize:20px sliderThumbBorderWidth:2px sliderBorderRadius:2px
+
+// ==================== 开关组件 (Switch) ====================
+
+<Component-Switch> switchWidth:44px switchHeight:24px switchThumbSize:20px switchPadding:2px switchTransition:all 0.2s ease
+
+// ==================== 分割线组件 (Divider) ====================
+
+<Component-Divider> dividerWidth:1px dividerMargin:16px dividerOpacity:0.12
+
+
+# Component Styles
+
+
+// ==================== Button 按钮 ====================
+
+<Button-ButtonPrimary> background-color:--colorBrandPrimary color:--colorTextInverse padding:--spacing2 --spacing4 border-radius:--radiusSm border-width:0 border-style:solid cursor:pointer font-size:--fontSizeBase font-weight:--fontWeightMedium height:--buttonHeightBase transition:--buttonTransition
+-<StateStyle-Hover trigger:hover> background-color:--colorBrandPrimaryHover
+-<StateStyle-Active trigger:active> background-color:--colorBrandPrimaryActive transform:scale(0.98)
+-<StateStyle-Focus trigger:focus> box-shadow:--shadowFocusPrimary
+-<StateStyle-Disabled trigger:disabled> background-color:--colorBgDisabled color:--colorTextDisabled cursor:not-allowed
+
+<Button-ButtonSecondary> background-color:transparent color:--colorBrandPrimary padding:--spacing2 --spacing4 border-radius:--radiusSm border-width:1px border-style:solid border-color:--colorBrandPrimary cursor:pointer font-size:--fontSizeBase font-weight:--fontWeightMedium height:--buttonHeightBase transition:--buttonTransition
+-<StateStyle-Hover trigger:hover> background-color:rgba(0,82,217,0.05) border-color:--colorBrandPrimaryHover color:--colorBrandPrimaryHover
+-<StateStyle-Active trigger:active> background-color:rgba(0,82,217,0.10) border-color:--colorBrandPrimaryActive
+-<StateStyle-Focus trigger:focus> box-shadow:--shadowFocusPrimary
+-<StateStyle-Disabled trigger:disabled> border-color:--colorBorderDisabled color:--colorTextDisabled cursor:not-allowed
+
+<Button-ButtonText> background-color:transparent color:--colorBrandPrimary padding:--spacing2 --spacing3 border-radius:--radiusSm border-width:0 cursor:pointer font-size:--fontSizeBase font-weight:--fontWeightMedium height:--buttonHeightBase transition:--buttonTransition
+-<StateStyle-Hover trigger:hover> background-color:rgba(0,82,217,0.05) color:--colorBrandPrimaryHover
+-<StateStyle-Active trigger:active> background-color:rgba(0,82,217,0.10)
+-<StateStyle-Disabled trigger:disabled> color:--colorTextDisabled cursor:not-allowed
+
+<Button-ButtonDanger> background-color:--colorError color:--colorTextInverse padding:--spacing2 --spacing4 border-radius:--radiusSm border-width:0 cursor:pointer font-size:--fontSizeBase font-weight:--fontWeightMedium height:--buttonHeightBase transition:--buttonTransition
+-<StateStyle-Hover trigger:hover> background-color:--colorErrorHover
+-<StateStyle-Active trigger:active> background-color:--colorErrorActive transform:scale(0.98)
+-<StateStyle-Focus trigger:focus> box-shadow:--shadowFocusError
+-<StateStyle-Disabled trigger:disabled> background-color:--colorBgDisabled color:--colorTextDisabled cursor:not-allowed
+
+<Button-ButtonSuccess> background-color:--colorSuccess color:--colorTextInverse padding:--spacing2 --spacing4 border-radius:--radiusSm border-width:0 cursor:pointer font-size:--fontSizeBase font-weight:--fontWeightMedium height:--buttonHeightBase transition:--buttonTransition
+-<StateStyle-Hover trigger:hover> background-color:--colorSuccessHover
+-<StateStyle-Active trigger:active> background-color:--colorSuccessActive transform:scale(0.98)
+-<StateStyle-Focus trigger:focus> box-shadow:--shadowFocusSuccess
+-<StateStyle-Disabled trigger:disabled> background-color:--colorBgDisabled color:--colorTextDisabled cursor:not-allowed
+
+<Button-ButtonWarning> background-color:--colorWarning color:--colorTextInverse padding:--spacing2 --spacing4 border-radius:--radiusSm border-width:0 cursor:pointer font-size:--fontSizeBase font-weight:--fontWeightMedium height:--buttonHeightBase transition:--buttonTransition
+-<StateStyle-Hover trigger:hover> background-color:--colorWarningHover
+-<StateStyle-Active trigger:active> background-color:--colorWarningActive transform:scale(0.98)
+-<StateStyle-Focus trigger:focus> box-shadow:--shadowFocusWarning
+-<StateStyle-Disabled trigger:disabled> background-color:--colorBgDisabled color:--colorTextDisabled cursor:not-allowed
+
+<Button-ButtonGhost> background-color:transparent color:--colorTextDefault padding:--spacing2 --spacing4 border-radius:--radiusSm border-width:1px border-style:solid border-color:--colorBorderDefault cursor:pointer font-size:--fontSizeBase font-weight:--fontWeightMedium height:--buttonHeightBase transition:--buttonTransition
+-<StateStyle-Hover trigger:hover> border-color:--colorBrandPrimary color:--colorBrandPrimary
+-<StateStyle-Active trigger:active> border-color:--colorBrandPrimaryActive color:--colorBrandPrimaryActive
+-<StateStyle-Disabled trigger:disabled> border-color:--colorBorderDisabled color:--colorTextDisabled cursor:not-allowed
+
+<Button-ButtonIcon> background-color:transparent color:--colorTextSecondary padding:--spacing2 border-radius:--radiusSm border-width:0 cursor:pointer font-size:--fontSizeMd height:--buttonHeightBase transition:--buttonTransition
+-<StateStyle-Hover trigger:hover> background-color:--colorBgHover color:--colorTextDefault
+-<StateStyle-Active trigger:active> background-color:--colorBgActive
+-<StateStyle-Disabled trigger:disabled> color:--colorTextDisabled cursor:not-allowed
+
+<Button-ButtonLink> background-color:transparent color:--colorTextLink padding:0 border-width:0 cursor:pointer font-size:--fontSizeBase font-weight:--fontWeightNormal line-height:--lineHeightNormal text-decoration:none transition:all --duration150 --timingEaseInOut
+-<StateStyle-Hover trigger:hover> color:--colorTextLinkHover text-decoration:underline
+-<StateStyle-Active trigger:active> color:--colorTextLinkActive
+-<StateStyle-Disabled trigger:disabled> color:--colorTextDisabled cursor:not-allowed
+
+<Button-ButtonLarge> background-color:--colorBrandPrimary color:--colorTextInverse padding:--spacing3 --spacing6 border-radius:--radiusMd border-width:0 cursor:pointer font-size:--fontSizeMd font-weight:--fontWeightMedium height:--buttonHeightLg transition:--buttonTransition
+-<StateStyle-Hover trigger:hover> background-color:--colorBrandPrimaryHover transform:translateY(-1px) box-shadow:--shadowMd
+-<StateStyle-Active trigger:active> background-color:--colorBrandPrimaryActive transform:scale(0.98) box-shadow:none
+-<StateStyle-Disabled trigger:disabled> background-color:--colorBgDisabled color:--colorTextDisabled cursor:not-allowed
+
+<Button-ButtonSmall> background-color:--colorBrandPrimary color:--colorTextInverse padding:--spacing1 --spacing3 border-radius:--radiusXs border-width:0 cursor:pointer font-size:--fontSizeXs font-weight:--fontWeightMedium height:--buttonHeightSm transition:--buttonTransition
+-<StateStyle-Hover trigger:hover> background-color:--colorBrandPrimaryHover
+-<StateStyle-Active trigger:active> background-color:--colorBrandPrimaryActive transform:scale(0.98)
+-<StateStyle-Disabled trigger:disabled> background-color:--colorBgDisabled color:--colorTextDisabled cursor:not-allowed
+
+// ==================== Input 输入框 ====================
+
+<Input-InputDefault> border-width:1px border-style:solid border-color:--colorBorderDefault padding:--spacing2 --inputPaddingX border-radius:--radiusSm font-size:--fontSizeBase color:--colorTextDefault background-color:--colorBgBody height:--inputHeightBase transition:--inputTransition outline:none
+-<StateStyle-Hover trigger:hover> border-color:--colorBorderHover
+-<StateStyle-Focus trigger:focus> border-color:--colorBrandPrimary box-shadow:--shadowFocusPrimary
+-<StateStyle-Disabled trigger:disabled> background-color:--colorBgDisabled color:--colorTextDisabled cursor:not-allowed
+-<StateStyle-Error trigger:error> border-color:--colorBorderError
+
+<Input-InputError> border-width:1px border-style:solid border-color:--colorError padding:--spacing2 --inputPaddingX border-radius:--radiusSm font-size:--fontSizeBase color:--colorTextDefault background-color:--colorBgBody height:--inputHeightBase transition:--inputTransition outline:none
+-<StateStyle-Focus trigger:focus> border-color:--colorError box-shadow:--shadowFocusError
+-<StateStyle-Disabled trigger:disabled> background-color:--colorBgDisabled color:--colorTextDisabled cursor:not-allowed
+
+<Input-InputSuccess> border-width:1px border-style:solid border-color:--colorSuccess padding:--spacing2 --inputPaddingX border-radius:--radiusSm font-size:--fontSizeBase color:--colorTextDefault background-color:--colorBgBody height:--inputHeightBase transition:--inputTransition outline:none
+-<StateStyle-Focus trigger:focus> border-color:--colorSuccess box-shadow:--shadowFocusSuccess
+
+<Input-InputLarge> border-width:1px border-style:solid border-color:--colorBorderDefault padding:--spacing3 --inputPaddingX border-radius:--radiusSm font-size:--fontSizeMd color:--colorTextDefault background-color:--colorBgBody height:--inputHeightLg transition:--inputTransition outline:none
+-<StateStyle-Hover trigger:hover> border-color:--colorBorderHover
+-<StateStyle-Focus trigger:focus> border-color:--colorBrandPrimary box-shadow:--shadowFocusPrimary
+-<StateStyle-Disabled trigger:disabled> background-color:--colorBgDisabled color:--colorTextDisabled cursor:not-allowed
+
+<Input-InputSmall> border-width:1px border-style:solid border-color:--colorBorderDefault padding:--spacing1 --inputPaddingX border-radius:--radiusSm font-size:--fontSizeSm color:--colorTextDefault background-color:--colorBgBody height:--inputHeightSm transition:--inputTransition outline:none
+-<StateStyle-Hover trigger:hover> border-color:--colorBorderHover
+-<StateStyle-Focus trigger:focus> border-color:--colorBrandPrimary box-shadow:--shadowFocusPrimary
+-<StateStyle-Disabled trigger:disabled> background-color:--colorBgDisabled color:--colorTextDisabled cursor:not-allowed
+
+// ==================== Textarea 文本域 ====================
+
+<Textarea-TextareaDefault> border-width:1px border-style:solid border-color:--colorBorderDefault padding:--spacing2 border-radius:--radiusSm font-size:--fontSizeBase color:--colorTextDefault background-color:--colorBgBody resize:vertical min-height:80px transition:--inputTransition outline:none font-family:--fontFamilyBase
+-<StateStyle-Hover trigger:hover> border-color:--colorBorderHover
+-<StateStyle-Focus trigger:focus> border-color:--colorBrandPrimary box-shadow:--shadowFocusPrimary
+-<StateStyle-Disabled trigger:disabled> background-color:--colorBgDisabled color:--colorTextDisabled cursor:not-allowed resize:none
+
+<Textarea-TextareaError> border-width:1px border-style:solid border-color:--colorError padding:--spacing2 border-radius:--radiusSm font-size:--fontSizeBase color:--colorTextDefault background-color:--colorBgBody resize:vertical min-height:80px transition:--inputTransition outline:none font-family:--fontFamilyBase
+-<StateStyle-Focus trigger:focus> border-color:--colorError box-shadow:--shadowFocusError
+
+// ==================== Select 下拉选择 ====================
+
+<Select-SelectDefault> border-width:1px border-style:solid border-color:--colorBorderDefault padding:--spacing2 --inputPaddingX border-radius:--radiusSm font-size:--fontSizeBase color:--colorTextDefault background-color:--colorBgBody height:--inputHeightBase cursor:pointer transition:--inputTransition outline:none
+-<StateStyle-Hover trigger:hover> border-color:--colorBorderHover
+-<StateStyle-Focus trigger:focus> border-color:--colorBrandPrimary box-shadow:--shadowFocusPrimary
+-<StateStyle-Disabled trigger:disabled> background-color:--colorBgDisabled color:--colorTextDisabled cursor:not-allowed
+
+<Select-SelectError> border-width:1px border-style:solid border-color:--colorError padding:--spacing2 --inputPaddingX border-radius:--radiusSm font-size:--fontSizeBase color:--colorTextDefault background-color:--colorBgBody height:--inputHeightBase cursor:pointer transition:--inputTransition outline:none
+-<StateStyle-Focus trigger:focus> border-color:--colorError box-shadow:--shadowFocusError
+
+// ==================== Checkbox 复选框 ====================
+
+<Checkbox-CheckboxDefault> width:16px height:16px border-width:1px border-style:solid border-color:--colorBorderDefault border-radius:--radiusXs background-color:--colorBgBody cursor:pointer transition:all 0.2s ease
+-<StateStyle-Hover trigger:hover> border-color:--colorBrandPrimary
+-<StateStyle-Checked trigger:checked> background-color:--colorBrandPrimary border-color:--colorBrandPrimary
+-<StateStyle-Disabled trigger:disabled> background-color:--colorBgDisabled border-color:--colorBorderDisabled cursor:not-allowed
+
+// ==================== Radio 单选框 ====================
+
+<Radio-RadioDefault> width:16px height:16px border-width:1px border-style:solid border-color:--colorBorderDefault border-radius:--radiusFull background-color:--colorBgBody cursor:pointer transition:all 0.2s ease
+-<StateStyle-Hover trigger:hover> border-color:--colorBrandPrimary
+-<StateStyle-Checked trigger:checked> border-color:--colorBrandPrimary border-width:5px
+-<StateStyle-Disabled trigger:disabled> background-color:--colorBgDisabled border-color:--colorBorderDisabled cursor:not-allowed
+
+// ==================== Switch 开关 ====================
+
+<Switch-SwitchDefault> width:--switchWidth height:--switchHeight border-radius:--radiusPill background-color:--colorNeutral500 cursor:pointer transition:--switchTransition position:relative
+-<StateStyle-Hover trigger:hover> background-color:--colorNeutral600
+-<StateStyle-Checked trigger:checked> background-color:--colorBrandPrimary
+-<StateStyle-Disabled trigger:disabled> background-color:--colorBgDisabled cursor:not-allowed
+
+// ==================== Block 块容器 ====================
+
+<Block-CardDefault> background-color:--colorBgBody border-radius:--radiusMd padding:--cardPadding box-shadow:--shadowCard
+
+<Block-CardHoverable> background-color:--colorBgBody border-radius:--radiusMd padding:--cardPadding box-shadow:--shadowCard transition:all 0.3s ease
+-<StateStyle-Hover trigger:hover> box-shadow:--shadowCardHover transform:translateY(-2px)
+
+<Block-CardInteractive> background-color:--colorBgBody border-radius:--radiusMd padding:--cardPadding box-shadow:--shadowCard cursor:pointer transition:all 0.3s ease
+-<StateStyle-Hover trigger:hover> box-shadow:--shadowCardHover transform:translateY(-2px)
+-<StateStyle-Active trigger:active> transform:translateY(0) box-shadow:--shadowCard
+
+<Block-CardElevated> background-color:--colorBgBody border-radius:--radiusMd padding:--cardPadding box-shadow:--shadowElevation2
+-<StateStyle-Hover trigger:hover> box-shadow:--shadowElevation3
+
+<Block-CardFlat> background-color:--colorBgBody border-radius:--radiusMd padding:--cardPadding border-width:1px border-style:solid border-color:--colorBorderSubtle
+-<StateStyle-Hover trigger:hover> border-color:--colorBorderDefault
+
+<Block-PanelDefault> background-color:--colorBgBody border-radius:--radiusMd padding:--spacing6 border-width:1px border-style:solid border-color:--colorBorderSubtle
+
+<Block-PanelSecondary> background-color:--colorBgSecondary border-radius:--radiusMd padding:--spacing6
+
+<Block-Container> background-color:--colorBgContainer padding:--spacing4 border-radius:--radiusSm
+
+<Block-Section> background-color:--colorBgBody padding:--spacing6
+
+<Block-Well> background-color:--colorBgTertiary border-radius:--radiusMd padding:--spacing4
+
+// ==================== Alert / Notice ====================
+
+<Block-AlertInfo> background-color:--colorInfoLight border-radius:--radiusSm padding:--spacing3 --spacing4 border-left-width:4px border-left-style:solid border-left-color:--colorInfo
+
+<Block-AlertSuccess> background-color:--colorSuccessLight border-radius:--radiusSm padding:--spacing3 --spacing4 border-left-width:4px border-left-style:solid border-left-color:--colorSuccess
+
+<Block-AlertWarning> background-color:--colorWarningLight border-radius:--radiusSm padding:--spacing3 --spacing4 border-left-width:4px border-left-style:solid border-left-color:--colorWarning
+
+<Block-AlertError> background-color:--colorErrorLight border-radius:--radiusSm padding:--spacing3 --spacing4 border-left-width:4px border-left-style:solid border-left-color:--colorError
+
+// ==================== Text 文本 ====================
+
+<Text-TextPrimary> font-size:--fontSizeBase color:--colorTextDefault line-height:--lineHeightNormal font-weight:--fontWeightRegular
+
+<Text-TextSecondary> font-size:--fontSizeSm color:--colorTextSecondary line-height:--lineHeightNormal font-weight:--fontWeightRegular
+
+<Text-TextTertiary> font-size:--fontSizeSm color:--colorTextTertiary line-height:--lineHeightNormal font-weight:--fontWeightRegular
+
+<Text-TextDisabled> font-size:--fontSizeBase color:--colorTextDisabled line-height:--lineHeightNormal font-weight:--fontWeightRegular
+
+<Text-TextSmall> font-size:--fontSizeSm color:--colorTextDefault line-height:--lineHeightNormal font-weight:--fontWeightRegular
+
+<Text-TextLarge> font-size:--fontSizeMd color:--colorTextDefault line-height:--lineHeightNormal font-weight:--fontWeightRegular
+
+<Text-HeadingXL> font-size:--fontSize4xl color:--colorTextDefault line-height:--lineHeightTight font-weight:--fontWeightBold
+
+<Text-HeadingLarge> font-size:--fontSize2xl color:--colorTextDefault line-height:--lineHeightTight font-weight:--fontWeightBold
+
+<Text-HeadingMedium> font-size:--fontSizeLg color:--colorTextDefault line-height:--lineHeightSnug font-weight:--fontWeightSemibold
+
+<Text-HeadingSmall> font-size:--fontSizeMd color:--colorTextDefault line-height:--lineHeightSnug font-weight:--fontWeightMedium
+
+<Text-Caption> font-size:--fontSizeXs color:--colorTextTertiary line-height:--lineHeightNormal font-weight:--fontWeightRegular
+
+<Text-Label> font-size:--fontSizeSm color:--colorTextSecondary line-height:--lineHeightNormal font-weight:--fontWeightMedium
+
+<Text-LinkDefault> font-size:--fontSizeBase color:--colorTextLink line-height:--lineHeightNormal cursor:pointer text-decoration:none
+-<StateStyle-Hover trigger:hover> color:--colorTextLinkHover text-decoration:underline
+-<StateStyle-Active trigger:active> color:--colorTextLinkActive
+
+<Text-LinkSubtle> font-size:--fontSizeBase color:--colorTextSecondary line-height:--lineHeightNormal cursor:pointer text-decoration:none
+-<StateStyle-Hover trigger:hover> color:--colorTextDefault text-decoration:underline
+
+<Text-Code> font-size:--fontSizeSm font-family:--fontFamilyMono color:--colorTextDefault background-color:--colorBgTertiary padding:--spacing1 --spacing2 border-radius:--radiusXs
+
+<Text-Success> font-size:--fontSizeBase color:--colorSuccess line-height:--lineHeightNormal font-weight:--fontWeightRegular
+
+<Text-Warning> font-size:--fontSizeBase color:--colorWarning line-height:--lineHeightNormal font-weight:--fontWeightRegular
+
+<Text-Error> font-size:--fontSizeBase color:--colorError line-height:--lineHeightNormal font-weight:--fontWeightRegular
+
+// ==================== Layout 布局 ====================
+
+<Row-RowDefault> display:flex flex-direction:row align-items:center gap:--spacing2
+
+<Row-RowSpaced> display:flex flex-direction:row align-items:center justify-content:space-between gap:--spacing2
+
+<Row-RowCentered> display:flex flex-direction:row align-items:center justify-content:center gap:--spacing2
+
+<Row-RowStart> display:flex flex-direction:row align-items:center justify-content:flex-start gap:--spacing2
+
+<Row-RowEnd> display:flex flex-direction:row align-items:center justify-content:flex-end gap:--spacing2
+
+<Row-RowWrap> display:flex flex-direction:row align-items:center flex-wrap:wrap gap:--spacing2
+
+<Col-ColDefault> display:flex flex-direction:column gap:--spacing2
+
+<Col-ColCentered> display:flex flex-direction:column align-items:center gap:--spacing2
+
+<Col-ColSpaced> display:flex flex-direction:column justify-content:space-between gap:--spacing2
+
+<Col-ColStretch> display:flex flex-direction:column align-items:stretch gap:--spacing2
+
+// ==================== Divider 分割线 ====================
+
+<Divider-DividerDefault> border-width:0 border-top-width:1px border-style:solid border-color:--colorBorderSubtle margin:--spacing4 0
+
+<Divider-DividerLight> border-width:0 border-top-width:1px border-style:solid border-color:--colorBorderLight margin:--spacing2 0
+
+<Divider-DividerStrong> border-width:0 border-top-width:1px border-style:solid border-color:--colorBorderStrong margin:--spacing4 0
+
+<Divider-DividerDashed> border-width:0 border-top-width:1px border-style:dashed border-color:--colorBorderSubtle margin:--spacing4 0
+
+<Divider-DividerVertical> border-width:0 border-left-width:1px border-style:solid border-color:--colorBorderSubtle margin:0 --spacing4 height:100%
+
+// ==================== Image 图片 ====================
+
+<Image-ImageDefault> border-radius:--radiusSm object-fit:cover
+
+<Image-ImageRounded> border-radius:--radiusMd object-fit:cover
+
+<Image-ImageCircle> border-radius:--radiusFull object-fit:cover
+
+<Image-ImageThumbnail> border-radius:--radiusSm object-fit:cover border-width:1px border-style:solid border-color:--colorBorderSubtle
+
+// ==================== Tag 标签 ====================
+
+<Tag-TagDefault> display:inline-flex align-items:center padding:--spacing1 --spacing2 border-radius:--radiusXs font-size:--fontSizeSm font-weight:--fontWeightMedium background-color:--colorBgTertiary color:--colorTextSecondary
+
+<Tag-TagPrimary> display:inline-flex align-items:center padding:--spacing1 --spacing2 border-radius:--radiusXs font-size:--fontSizeSm font-weight:--fontWeightMedium background-color:--colorBrandPrimaryLight color:--colorBrandPrimary
+
+<Tag-TagSuccess> display:inline-flex align-items:center padding:--spacing1 --spacing2 border-radius:--radiusXs font-size:--fontSizeSm font-weight:--fontWeightMedium background-color:--colorSuccessLight color:--colorSuccessActive
+
+<Tag-TagWarning> display:inline-flex align-items:center padding:--spacing1 --spacing2 border-radius:--radiusXs font-size:--fontSizeSm font-weight:--fontWeightMedium background-color:--colorWarningLight color:--colorWarningActive
+
+<Tag-TagError> display:inline-flex align-items:center padding:--spacing1 --spacing2 border-radius:--radiusXs font-size:--fontSizeSm font-weight:--fontWeightMedium background-color:--colorErrorLight color:--colorErrorActive
+
+<Tag-TagOutline> display:inline-flex align-items:center padding:--spacing1 --spacing2 border-radius:--radiusXs font-size:--fontSizeSm font-weight:--fontWeightMedium background-color:transparent color:--colorTextSecondary border-width:1px border-style:solid border-color:--colorBorderDefault
+
+// ==================== Badge 徽章 ====================
+
+<Badge-BadgeDefault> display:inline-flex align-items:center justify-content:center min-width:--badgeMinWidth height:--badgeHeight padding:0 --badgePaddingX border-radius:--badgeBorderRadius font-size:--badgeFontSize font-weight:--fontWeightMedium background-color:--colorNeutral500 color:--colorTextInverse
+
+<Badge-BadgePrimary> display:inline-flex align-items:center justify-content:center min-width:--badgeMinWidth height:--badgeHeight padding:0 --badgePaddingX border-radius:--badgeBorderRadius font-size:--badgeFontSize font-weight:--fontWeightMedium background-color:--colorBrandPrimary color:--colorTextInverse
+
+<Badge-BadgeSuccess> display:inline-flex align-items:center justify-content:center min-width:--badgeMinWidth height:--badgeHeight padding:0 --badgePaddingX border-radius:--badgeBorderRadius font-size:--badgeFontSize font-weight:--fontWeightMedium background-color:--colorSuccess color:--colorTextInverse
+
+<Badge-BadgeWarning> display:inline-flex align-items:center justify-content:center min-width:--badgeMinWidth height:--badgeHeight padding:0 --badgePaddingX border-radius:--badgeBorderRadius font-size:--badgeFontSize font-weight:--fontWeightMedium background-color:--colorWarning color:--colorTextInverse
+
+<Badge-BadgeError> display:inline-flex align-items:center justify-content:center min-width:--badgeMinWidth height:--badgeHeight padding:0 --badgePaddingX border-radius:--badgeBorderRadius font-size:--badgeFontSize font-weight:--fontWeightMedium background-color:--colorError color:--colorTextInverse
+
+<Badge-BadgeDot> display:inline-block width:8px height:8px border-radius:--radiusFull background-color:--colorError
+
+// ==================== Avatar 头像 ====================
+
+<Avatar-AvatarDefault> width:--avatarSizeBase height:--avatarSizeBase border-radius:--radiusFull object-fit:cover background-color:--colorBgTertiary
+
+<Avatar-AvatarSmall> width:--avatarSizeSm height:--avatarSizeSm border-radius:--radiusFull object-fit:cover background-color:--colorBgTertiary
+
+<Avatar-AvatarLarge> width:--avatarSizeLg height:--avatarSizeLg border-radius:--radiusFull object-fit:cover background-color:--colorBgTertiary
+
+<Avatar-AvatarXLarge> width:--avatarSizeXl height:--avatarSizeXl border-radius:--radiusFull object-fit:cover background-color:--colorBgTertiary
+
+<Avatar-AvatarSquare> width:--avatarSizeBase height:--avatarSizeBase border-radius:--radiusSm object-fit:cover background-color:--colorBgTertiary
+
+// ==================== Progress 进度条 ====================
+
+<Progress-ProgressTrack> width:100% height:--progressHeight background-color:--colorBgTertiary border-radius:--progressBorderRadius overflow:hidden
+
+<Progress-ProgressBar> height:100% background-color:--colorBrandPrimary border-radius:--progressBorderRadius transition:--progressTransition
+
+<Progress-ProgressBarSuccess> height:100% background-color:--colorSuccess border-radius:--progressBorderRadius transition:--progressTransition
+
+<Progress-ProgressBarWarning> height:100% background-color:--colorWarning border-radius:--progressBorderRadius transition:--progressTransition
+
+<Progress-ProgressBarError> height:100% background-color:--colorError border-radius:--progressBorderRadius transition:--progressTransition
+
+// ==================== Table 表格 ====================
+
+<Table-TableDefault> width:100% border-collapse:collapse border-radius:--tableBorderRadius overflow:hidden
+
+<Block-TableHeader> background-color:--colorBgSecondary font-weight:--fontWeightMedium color:--colorTextDefault
+
+<Block-TableCell> padding:--tableCellPaddingY --tableCellPaddingX border-bottom-width:1px border-bottom-style:solid border-bottom-color:--colorBorderSubtle
+
+<Block-TableRow> background-color:--colorBgBody transition:background-color 0.2s ease
+-<StateStyle-Hover trigger:hover> background-color:--colorBgHover
+
+// ==================== Modal 模态框 ====================
+
+<Block-ModalOverlay> background-color:--colorBgMask position:fixed top:0 left:0 right:0 bottom:0 z-index:--zIndexModalBackdrop
+
+<Block-ModalContent> background-color:--colorBgBody border-radius:--modalBorderRadius padding:--modalPadding box-shadow:--shadowModal
+
+<Block-ModalHeader> padding-bottom:--spacing4 border-bottom-width:1px border-bottom-style:solid border-bottom-color:--colorBorderSubtle margin-bottom:--spacing4
+
+<Block-ModalFooter> padding-top:--spacing4 border-top-width:1px border-top-style:solid border-top-color:--colorBorderSubtle margin-top:--spacing4
+
+// ==================== Dropdown 下拉菜单 ====================
+
+<Block-DropdownMenu> background-color:--colorBgElevated border-radius:--dropdownBorderRadius padding:--dropdownPadding box-shadow:--shadowDropdown min-width:--dropdownMinWidth max-height:--dropdownMaxHeight overflow-y:auto z-index:--zIndexDropdown
+
+<Block-DropdownItem> padding:--spacing2 --dropdownItemPaddingX border-radius:--radiusSm cursor:pointer transition:background-color 0.15s ease
+-<StateStyle-Hover trigger:hover> background-color:--colorBgHover
+-<StateStyle-Active trigger:active> background-color:--colorBgActive
+
+<Block-DropdownDivider> height:1px background-color:--colorBorderSubtle margin:--spacing2 0
+
+// ==================== Tab 标签页 ====================
+
+<Block-TabBar> display:flex border-bottom-width:1px border-bottom-style:solid border-bottom-color:--colorBorderSubtle
+
+<Block-TabItem> padding:--spacing2 --tabPaddingX cursor:pointer color:--colorTextSecondary border-bottom-width:2px border-bottom-style:solid border-bottom-color:transparent margin-bottom:-1px transition:all 0.2s ease
+-<StateStyle-Hover trigger:hover> color:--colorTextDefault
+-<StateStyle-Active trigger:active> color:--colorBrandPrimary border-bottom-color:--colorBrandPrimary
+
+// ==================== Tooltip 提示 ====================
+
+<Block-TooltipContent> background-color:--colorNeutral900 color:--colorTextInverse padding:--spacing1 --spacing2 border-radius:--radiusSm font-size:--fontSizeSm max-width:200px z-index:--zIndexTooltip box-shadow:--shadowSm
+
+// ==================== Toast 通知 ====================
+
+<Block-ToastDefault> background-color:--colorBgElevated border-radius:--toastBorderRadius padding:--toastPadding box-shadow:--shadowElevation3 min-width:--toastMinWidth max-width:--toastMaxWidth z-index:--zIndexToast
+
+<Block-ToastSuccess> background-color:--colorBgElevated border-radius:--toastBorderRadius padding:--toastPadding box-shadow:--shadowElevation3 border-left-width:4px border-left-style:solid border-left-color:--colorSuccess
+
+<Block-ToastError> background-color:--colorBgElevated border-radius:--toastBorderRadius padding:--toastPadding box-shadow:--shadowElevation3 border-left-width:4px border-left-style:solid border-left-color:--colorError
+
+<Block-ToastWarning> background-color:--colorBgElevated border-radius:--toastBorderRadius padding:--toastPadding box-shadow:--shadowElevation3 border-left-width:4px border-left-style:solid border-left-color:--colorWarning
+
+<Block-ToastInfo> background-color:--colorBgElevated border-radius:--toastBorderRadius padding:--toastPadding box-shadow:--shadowElevation3 border-left-width:4px border-left-style:solid border-left-color:--colorInfo
+
+// ==================== Navbar 导航栏 ====================
+
+<Block-NavbarDefault> height:--navbarHeight background-color:--colorBgBody border-bottom-width:1px border-bottom-style:solid border-bottom-color:--colorBorderSubtle padding:0 --navbarPaddingX display:flex align-items:center
+
+<Block-NavItem> height:--navItemHeight padding:0 --navItemPaddingX border-radius:--navItemBorderRadius cursor:pointer display:flex align-items:center color:--colorTextSecondary transition:all 0.2s ease
+-<StateStyle-Hover trigger:hover> background-color:--colorBgHover color:--colorTextDefault
+-<StateStyle-Active trigger:active> background-color:--colorBgSelected color:--colorBrandPrimary
+
+// ==================== Sidebar 侧边栏 ====================
+
+<Block-SidebarDefault> background-color:--colorBgBody border-right-width:1px border-right-style:solid border-right-color:--colorBorderSubtle padding:--sidebarPadding transition:--sidebarTransition overflow-y:auto
+
+<Block-SidebarItem> height:--sidebarItemHeight padding:0 --sidebarItemPaddingX border-radius:--radiusSm cursor:pointer display:flex align-items:center color:--colorTextSecondary transition:all 0.2s ease margin-bottom:--spacing1
+-<StateStyle-Hover trigger:hover> background-color:--colorBgHover color:--colorTextDefault
+-<StateStyle-Active trigger:active> background-color:--colorBgSelected color:--colorBrandPrimary
+
+// ==================== Pagination 分页 ====================
+
+<Block-PaginationContainer> display:flex align-items:center gap:--paginationGap
+
+<Block-PaginationItem> width:--paginationItemSize height:--paginationItemSize border-radius:--paginationBorderRadius display:flex align-items:center justify-content:center cursor:pointer color:--colorTextSecondary transition:all 0.2s ease
+-<StateStyle-Hover trigger:hover> background-color:--colorBgHover color:--colorTextDefault
+-<StateStyle-Active trigger:active> background-color:--colorBrandPrimary color:--colorTextInverse
+-<StateStyle-Disabled trigger:disabled> color:--colorTextDisabled cursor:not-allowed
+
+// ==================== Skeleton 骨架屏 ====================
+
+<Block-SkeletonBase> background-color:--colorBgTertiary border-radius:--radiusSm
+
+<Block-SkeletonText> height:16px background-color:--colorBgTertiary border-radius:--radiusXs
+
+<Block-SkeletonCircle> border-radius:--radiusFull background-color:--colorBgTertiary
+
+// ==================== Empty State 空状态 ====================
+
+<Block-EmptyState> display:flex flex-direction:column align-items:center justify-content:center padding:--spacing8 color:--colorTextTertiary
+
+// ==================== Spinner 加载中 ====================
+
+<Block-SpinnerDefault> width:--spinnerSizeBase height:--spinnerSizeBase border-width:2px border-style:solid border-color:--colorBorderDefault border-top-color:--colorBrandPrimary border-radius:--radiusFull
+
+<Block-SpinnerSmall> width:--spinnerSizeSm height:--spinnerSizeSm border-width:2px border-style:solid border-color:--colorBorderDefault border-top-color:--colorBrandPrimary border-radius:--radiusFull
+
+<Block-SpinnerLarge> width:--spinnerSizeLg height:--spinnerSizeLg border-width:3px border-style:solid border-color:--colorBorderDefault border-top-color:--colorBrandPrimary border-radius:--radiusFull
+
+// ==================== Breadcrumb 面包屑 ====================
+
+<Block-BreadcrumbContainer> display:flex align-items:center gap:--spacing2 font-size:--fontSizeSm
+
+<Block-BreadcrumbItem> color:--colorTextSecondary cursor:pointer transition:color 0.2s ease
+-<StateStyle-Hover trigger:hover> color:--colorTextDefault
+
+<Block-BreadcrumbSeparator> color:--colorTextTertiary margin:0 --spacing1
+
+<Block-BreadcrumbActive> color:--colorTextDefault font-weight:--fontWeightMedium
+
+// ==================== Menu 菜单 ====================
+
+<Block-MenuContainer> background-color:--colorBgBody border-radius:--radiusMd padding:--spacing2 min-width:200px
+
+<Block-MenuItem> padding:--spacing2 --spacing3 border-radius:--radiusSm cursor:pointer color:--colorTextDefault transition:all 0.2s ease display:flex align-items:center gap:--spacing2
+-<StateStyle-Hover trigger:hover> background-color:--colorBgHover
+-<StateStyle-Active trigger:active> background-color:--colorBgSelected color:--colorBrandPrimary
+
+<Block-MenuItemDisabled> padding:--spacing2 --spacing3 color:--colorTextDisabled cursor:not-allowed
+
+<Block-MenuDivider> height:1px background-color:--colorBorderSubtle margin:--spacing2 0
+
+<Block-MenuGroup> padding:--spacing1 0
+
+<Block-MenuGroupTitle> padding:--spacing1 --spacing3 font-size:--fontSizeXs color:--colorTextTertiary font-weight:--fontWeightMedium text-transform:uppercase letter-spacing:--letterSpacingWide
+
+// ==================== Accordion 手风琴 ====================
+
+<Block-AccordionContainer> border-radius:--radiusMd overflow:hidden
+
+<Block-AccordionItem> border-bottom-width:1px border-bottom-style:solid border-bottom-color:--colorBorderSubtle
+
+<Block-AccordionHeader> padding:--spacing3 --spacing4 cursor:pointer background-color:--colorBgBody transition:background-color 0.2s ease display:flex align-items:center justify-content:space-between
+-<StateStyle-Hover trigger:hover> background-color:--colorBgHover
+
+<Block-AccordionContent> padding:0 --spacing4 --spacing4 background-color:--colorBgBody
+
+// ==================== Stepper 步骤条 ====================
+
+<Block-StepperContainer> display:flex align-items:center gap:--spacing4
+
+<Block-StepperItem> display:flex flex-direction:column align-items:center gap:--spacing2
+
+<Block-StepperCircle> width:32px height:32px border-radius:--radiusFull background-color:--colorBgTertiary color:--colorTextSecondary display:flex align-items:center justify-content:center font-weight:--fontWeightMedium transition:all 0.3s ease
+
+<Block-StepperCircleActive> width:32px height:32px border-radius:--radiusFull background-color:--colorBrandPrimary color:--colorTextInverse display:flex align-items:center justify-content:center font-weight:--fontWeightMedium
+
+<Block-StepperCircleCompleted> width:32px height:32px border-radius:--radiusFull background-color:--colorSuccess color:--colorTextInverse display:flex align-items:center justify-content:center font-weight:--fontWeightMedium
+
+<Block-StepperLine> flex:1 height:2px background-color:--colorBorderSubtle
+
+<Block-StepperLineActive> flex:1 height:2px background-color:--colorBrandPrimary
+
+// ==================== Slider 滑块 ====================
+
+<Block-SliderTrack> width:100% height:--sliderTrackHeight background-color:--colorBgTertiary border-radius:--sliderBorderRadius position:relative cursor:pointer
+
+<Block-SliderFill> height:100% background-color:--colorBrandPrimary border-radius:--sliderBorderRadius transition:width 0.2s ease
+
+<Block-SliderThumb> width:--sliderThumbSize height:--sliderThumbSize background-color:--colorBgBody border-width:--sliderThumbBorderWidth border-style:solid border-color:--colorBrandPrimary border-radius:--radiusFull cursor:pointer transition:all 0.2s ease box-shadow:--shadowSm
+-<StateStyle-Hover trigger:hover> transform:scale(1.1) box-shadow:--shadowMd
+-<StateStyle-Active trigger:active> transform:scale(0.95)
+
+// ==================== Rating 评分 ====================
+
+<Block-RatingContainer> display:flex align-items:center gap:--spacing1
+
+<Block-RatingStar> width:24px height:24px color:--colorNeutral400 cursor:pointer transition:all 0.2s ease
+-<StateStyle-Hover trigger:hover> color:--colorWarning transform:scale(1.1)
+
+<Block-RatingStarActive> width:24px height:24px color:--colorWarning
+
+// ==================== Upload 上传 ====================
+
+<Block-UploadArea> border-width:2px border-style:dashed border-color:--colorBorderDefault border-radius:--radiusMd padding:--spacing8 text-align:center cursor:pointer transition:all 0.3s ease background-color:--colorBgBody
+-<StateStyle-Hover trigger:hover> border-color:--colorBrandPrimary background-color:--colorBgHover
+
+<Block-UploadAreaDragging> border-width:2px border-style:dashed border-color:--colorBrandPrimary border-radius:--radiusMd padding:--spacing8 text-align:center background-color:--colorBgSelected
+
+// ==================== Timeline 时间线 ====================
+
+<Block-TimelineContainer> position:relative padding-left:--spacing8
+
+<Block-TimelineItem> position:relative padding-bottom:--spacing6
+
+<Block-TimelineDot> width:12px height:12px border-radius:--radiusFull background-color:--colorBrandPrimary position:absolute left:-26px top:4px
+
+<Block-TimelineLine> width:2px background-color:--colorBorderSubtle position:absolute left:-20px top:16px bottom:0
+
+<Block-TimelineContent> padding-left:--spacing4
+
+// ==================== Popover 气泡卡片 ====================
+
+<Block-PopoverContent> background-color:--colorBgElevated border-radius:--radiusMd padding:--spacing3 box-shadow:--shadowPopup max-width:300px z-index:--zIndexPopover
+
+<Block-PopoverArrow> width:12px height:12px background-color:--colorBgElevated transform:rotate(45deg)
+
+// ==================== Form 表单 ====================
+
+<Block-FormGroup> margin-bottom:--spacing4
+
+<Block-FormLabel> display:block margin-bottom:--spacing2 font-size:--fontSizeSm font-weight:--fontWeightMedium color:--colorTextDefault
+
+<Block-FormHelperText> margin-top:--spacing1 font-size:--fontSizeXs color:--colorTextTertiary
+
+<Block-FormErrorText> margin-top:--spacing1 font-size:--fontSizeXs color:--colorError
+
+// ==================== List 列表 ====================
+
+<Block-ListContainer> background-color:--colorBgBody border-radius:--radiusMd overflow:hidden
+
+<Block-ListItem> padding:--spacing3 --spacing4 border-bottom-width:1px border-bottom-style:solid border-bottom-color:--colorBorderSubtle cursor:pointer transition:background-color 0.2s ease
+-<StateStyle-Hover trigger:hover> background-color:--colorBgHover
+
+<Block-ListItemActive> padding:--spacing3 --spacing4 border-bottom-width:1px border-bottom-style:solid border-bottom-color:--colorBorderSubtle background-color:--colorBgSelected color:--colorBrandPrimary
+
+// ==================== Grid 网格 ====================
+
+<Block-Grid> display:grid gap:--spacing4
+
+<Block-GridCol2> display:grid grid-template-columns:repeat(2,1fr) gap:--spacing4
+
+<Block-GridCol3> display:grid grid-template-columns:repeat(3,1fr) gap:--spacing4
+
+<Block-GridCol4> display:grid grid-template-columns:repeat(4,1fr) gap:--spacing4
+
+<Block-GridCol6> display:grid grid-template-columns:repeat(6,1fr) gap:--spacing4
+
+// ==================== Utility 工具类 ====================
+
+<Block-Center> display:flex align-items:center justify-content:center
+
+<Block-SpaceBetween> display:flex align-items:center justify-content:space-between
+
+<Block-FlexStart> display:flex align-items:center justify-content:flex-start
+
+<Block-FlexEnd> display:flex align-items:center justify-content:flex-end
+
+<Block-FullWidth> width:100%
+
+<Block-FullHeight> height:100%
+
+<Block-Hidden> display:none
+
+<Block-Visible> display:block
+
+// ==================== Drawer 抽屉 ====================
+
+<Block-DrawerOverlay> background-color:--colorBgMask position:fixed top:0 left:0 right:0 bottom:0 z-index:--zIndexModalBackdrop
+
+<Block-DrawerContent> background-color:--colorBgBody height:100% box-shadow:--shadowModal overflow-y:auto
+
+<Block-DrawerHeader> padding:--spacing4 border-bottom-width:1px border-bottom-style:solid border-bottom-color:--colorBorderSubtle
+
+<Block-DrawerBody> padding:--spacing4
+
+<Block-DrawerFooter> padding:--spacing4 border-top-width:1px border-top-style:solid border-top-color:--colorBorderSubtle
+
+// ==================== Calendar 日历 ====================
+
+<Block-CalendarContainer> background-color:--colorBgBody border-radius:--radiusMd padding:--spacing4
+
+<Block-CalendarHeader> display:flex align-items:center justify-content:space-between padding:--spacing2 0 margin-bottom:--spacing4
+
+<Block-CalendarGrid> display:grid grid-template-columns:repeat(7,1fr) gap:--spacing1
+
+<Block-CalendarDay> aspect-ratio:1 display:flex align-items:center justify-content:center border-radius:--radiusSm cursor:pointer transition:all 0.2s ease
+-<StateStyle-Hover trigger:hover> background-color:--colorBgHover
+
+<Block-CalendarDayToday> aspect-ratio:1 display:flex align-items:center justify-content:center border-radius:--radiusSm border-width:1px border-style:solid border-color:--colorBrandPrimary
+
+<Block-CalendarDaySelected> aspect-ratio:1 display:flex align-items:center justify-content:center border-radius:--radiusSm background-color:--colorBrandPrimary color:--colorTextInverse
+
+</Theme-Default>
+```
