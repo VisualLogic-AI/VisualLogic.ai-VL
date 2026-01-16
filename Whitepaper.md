@@ -279,7 +279,7 @@ VL Syntax Reference (VL 2.4):
 Visuallogic.ai Master Marketing Whitepaper (English):
 VL Complete Presentation (Slides/PPT content):
 
-# Visuallogic.ai — Master Marketing Whitepaper (English)
+# Visuallogic.ai — Master Marketing Whitepaper 
 
 **Audience:** Individual developers & small-to-mid engineering teams
 **Purpose:** “Mother document” for external communication (website copy, pitch deck, PR, product brief, sales enablement)
