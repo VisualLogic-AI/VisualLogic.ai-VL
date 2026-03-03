@@ -16,6 +16,17 @@
 </p>
 
 ---
+## Build with VL-Code
+
+[VL-Code](https://github.com/VisualLogic-AI/VL-Code) is the open-source AI IDE for Visual Language. Clone it, add your Anthropic API key, and start building full-stack VL applications from natural language.
+
+```bash
+git clone https://github.com/VisualLogic-AI/VL-Code.git
+cd VL-Code && bash install.sh
+```
+
+---
+
 
 ## What is VisualLogic?
 
