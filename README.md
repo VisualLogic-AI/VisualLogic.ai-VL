@@ -29,6 +29,12 @@ It is **not** a low-code tool. It is **not** a prompt wrapper. It is a complete 
 
 > VisualLogic is not a tool on top of code. VisualLogic *is the programming system itself.*
 
+<p align="center">
+  <img src="https://raw.githubusercontent.com/VisualLogic-AI/VisualLogic.ai-VL/main/assets/images/vl-code-editor.png" alt="VL-Code Editor — AI-powered code editing with VL syntax" width="90%"/>
+  <br/>
+  <em>VL-Code Editor — AI-powered code editing with full VL syntax highlighting</em>
+</p>
+
 ---
 
 ## The VL Language
@@ -130,6 +136,18 @@ Unlike simple plan-then-execute tools, VL-Code uses **visual workflow DAGs** (Di
 - Fork into parallel execution paths
 
 These workflows are fully visual. You see every node, every data flow, every decision point. They drive **every phase**: development, testing, debugging, and deployment.
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/VisualLogic-AI/VisualLogic.ai-VL/main/assets/images/vl-code-flow-editor.png" alt="VL-Code Flow Editor — Visual workflow DAG for multi-agent orchestration" width="90%"/>
+  <br/>
+  <em>Flow Editor — Visual workflow DAG with multi-agent orchestration</em>
+</p>
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/VisualLogic-AI/VisualLogic.ai-VL/main/assets/images/vl-code-meta-editor.png" alt="VL-Code Meta Editor — High-level architecture and agent pipeline view" width="90%"/>
+  <br/>
+  <em>Meta Editor — Architecture overview and agent pipeline visualization</em>
+</p>
 
 ### Semantic Intelligence
 
