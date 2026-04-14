@@ -2,243 +2,110 @@
   <img src="https://raw.githubusercontent.com/VisualLogic-AI/VisualLogic.ai-VL/main/assets/logo.png" alt="VisualLogic.ai" width="420"/>
 </p>
 
-<h1 align="center">VisualLogic.ai — The AI-Native Programming System</h1>
+<h1 align="center">VisualLogic.ai — VL Language, Theme, and Sample Packs</h1>
 
 <p align="center">
-  <strong>Where Language, Visual Graphs, and AI Agents are fully reversible.</strong><br/>
-  Build production-ready applications from natural language — deterministically.
+  <strong>The public reference repo for Visual Language (VL) assets.</strong><br/>
+  Latest snapshot in this repo: VL 4.1, Theme 7.0, and refreshed importable example packs.
 </p>
 
 <p align="center">
   <a href="https://editor.visuallogic.ai/">Website</a> &nbsp;|&nbsp;
+  <a href="https://github.com/VisualLogic-AI/VL-Code">VL-Code Runtime</a> &nbsp;|&nbsp;
   <a href="https://www.youtube.com/playlist?list=PLJE6c8wBknRnCZIRv_VFa1dYswTSqoW21">YouTube</a> &nbsp;|&nbsp;
   <a href="https://discord.com/invite/KdaVtR7pzv">Discord</a>
 </p>
 
 ---
-## Build with VL-Code
 
-[VL-Code](https://github.com/VisualLogic-AI/VL-Code) is the open-source AI IDE for Visual Language. Clone it, add your Anthropic API key, and start building full-stack VL applications from natural language.
+## Latest Open Assets
 
-```bash
-git clone https://github.com/VisualLogic-AI/VL-Code.git
-cd VL-Code && bash install.sh
+| Asset | What it gives you |
+| --- | --- |
+| [VL 4.1 Reference](./VL_VERSION_4.1.md) | Current VL syntax snapshot used by the latest VLC runtime and sample packs |
+| [Theme 7.0 Guide](./THEME_7.0.md) | Human-readable overview of the latest enterprise theme contract |
+| [Theme-Enterprise_7.0.vth](./Theme-Enterprise_7.0.vth) | Importable theme source for VL 4.1 projects |
+| [Example Packs](./Examples/README.md) | Five refreshed importable sample projects with `appCaseJsonMap` included |
+| [Legacy Archive](./Legacy/README.md) | Older VL and theme snapshots kept for reference only |
+
+## What This Repo Is For
+
+This repository is the public landing zone for the parts of VisualLogic that are most useful to builders and evaluators:
+
+- the latest open VL syntax reference
+- the latest public theme snapshot
+- importable project packs people can download and test locally
+- supporting docs that explain how these assets fit together
+
+If you want to run the current local IDE runtime, use the public [VL-Code repository](https://github.com/VisualLogic-AI/VL-Code). If you want the language, theme, and sample content itself, this is the repo.
+
+## Current Repo Layout
+
+```text
+VisualLogic.ai-VL/
+├── VL_VERSION_4.1.md
+├── THEME_7.0.md
+├── Theme-Enterprise_7.0.vth
+├── Examples/
+│   ├── README.md
+│   ├── VL_CourseScheduler_WithCaseJsonMap.zip
+│   ├── VL_HabitCheckin_WithCaseJsonMap.zip
+│   ├── VL_MediaShelf_WithCaseJsonMap.zip
+│   ├── VL_ShoppingList_WithCaseJsonMap.zip
+│   ├── VL_VoteMini_WithCaseJsonMap.zip
+│   └── legacy/
+└── Legacy/
 ```
 
----
+## VL at a Glance
 
+Visual Language (VL) is a deterministic, component-oriented language for full-stack application generation.
 
-## What is VisualLogic?
+The current public snapshot in this repo is **VL 4.1** and covers six file types:
 
-VisualLogic is a **full-stack AI programming system** built on **VL (Visual Language)** — a minimal, deterministic language designed specifically for AI code generation.
+| Extension | Purpose |
+| --- | --- |
+| `.vx` | App entry, routing, orchestration |
+| `.sc` | Section-level UI and interaction logic |
+| `.cp` | Reusable presentation components |
+| `.vs` | Service-domain logic |
+| `.vdb` | Database schema and seed data |
+| `.vth` | Theme tokens and point-slot values |
 
-It is **not** a low-code tool. It is **not** a prompt wrapper. It is a complete programming system where:
+## Refreshed Example Packs
 
-- **AI generates code** with near-perfect accuracy, thanks to VL's low-entropy grammar
-- **Visual graphs** provide a lossless, bidirectional view of every program
-- **Multi-agent workflows** orchestrate the entire development lifecycle
+The `Examples/` directory now contains five newer sample projects exported with `appCaseJsonMap`, so users can import them into VLC and inspect the runtime structure immediately:
 
-> VisualLogic is not a tool on top of code. VisualLogic *is the programming system itself.*
+- `VL_CourseScheduler_WithCaseJsonMap.zip`
+- `VL_HabitCheckin_WithCaseJsonMap.zip`
+- `VL_MediaShelf_WithCaseJsonMap.zip`
+- `VL_ShoppingList_WithCaseJsonMap.zip`
+- `VL_VoteMini_WithCaseJsonMap.zip`
 
-<p align="center">
-  <img src="https://raw.githubusercontent.com/VisualLogic-AI/VisualLogic.ai-VL/main/assets/images/vl-code-editor.png" alt="VL-Code Editor — AI-powered code editing with VL syntax" width="90%"/>
-  <br/>
-  <em>VL-Code Editor — AI-powered code editing with full VL syntax highlighting</em>
-</p>
+Each pack includes:
 
----
+- `VLProject/` source files
+- `appCaseJsonMap/` runtime snapshots
+- a focused feature scenario for manual testing
 
-## The VL Language
+Older sample packs were moved to [`Examples/legacy/`](./Examples/legacy/README.md) instead of being deleted outright.
 
-VL (Visual Language) v2.91 is a declarative, component-oriented language covering the full stack through six file types:
+## Build with the Current VLC Runtime
 
-| Extension | Purpose | Description |
-|-----------|---------|-------------|
-| `.vx` | App | Navigation, routing, configuration |
-| `.sc` | Section | UI tree, state, events, styles |
-| `.cp` | Component | Reusable props-driven UI blocks |
-| `.vs` | Service | API contracts, domain logic |
-| `.vdb` | Database | Tables, columns, types, relations |
-| `.vth` | Theme | Colors, typography, spacing tokens |
+The public runtime guide and panel gallery now live in the [VL-Code repository](https://github.com/VisualLogic-AI/VL-Code):
 
-### Why VL?
+- [VLCode Quick Start and Panel Guide](https://github.com/VisualLogic-AI/VL-Code/blob/main/docs/VLCode_Quick_Start_and_Panel_Guide.md)
 
-Traditional programming languages carry enormous entropy — formatting choices, import orderings, naming conventions, bracket styles. This makes AI generation unreliable and expensive.
+That guide includes:
 
-VL eliminates this problem:
+- current runtime screenshots
+- mode-by-mode panel explanations
+- startup steps for the latest local build
+- compile / preview / chat workflow notes
 
-- **Stable grammar** — no formatting ambiguity, no hidden state
-- **Dash-based tree structure** — clean hierarchy without brace/bracket noise
-- **Ultra-low token cost** — compact representation means faster, cheaper AI generation
-- **Massive parallelism** — independent components enable multi-agent concurrent generation
+## Related Links
 
-```
-APP MyApp
---title: My Application
---theme: Theme-Default
-
-SECTION Dashboard
---$userCount(INT) = 0
-
---HANDLER onLoad()
-----CALL UserDomain.getStats()
-------ON SUCCESS
---------SET $userCount = result.total
-
---<Column "root">
-----<StatCard "users"> label:"Total Users" value:$userCount
-```
-
----
-
-## How It Works
-
-### Natural Language to Production App
-
-Give VisualLogic a product requirement in plain language. An automated **8-agent pipeline** handles everything:
-
-| # | Agent | Output |
-|---|-------|--------|
-| 1 | Requirements Analyst | PRD document |
-| 2 | Data Architect | Database schema (`.vdb`) |
-| 3 | Service Designer | API contracts (`.vs`) |
-| 4 | UI Architect | Screen/component breakdown |
-| 5 | Component Builder | Reusable UI components (`.cp`) |
-| 6 | Service Coder | Business logic (`.vs`) |
-| 7 | Screen Builder | Screens with state & events (`.sc`) |
-| 8 | App Assembler | App with routing (`.vx`) |
-
-Stages 5-8 run **in parallel** using independent agents. The result: a fully compilable, deployable application.
-
-### Bidirectional Code-Graph Transformation
-
-Every VL program has a direct, lossless mapping to a visual graph and back:
-
-```
-Natural Language
-       |
-   AI IDE (Agents + Workflows)
-       |
-   VL Source Files (.vx .sc .vs .vdb)
-       |
-   Visual IDE (Graph Editor)
-       |
-   VL Compiler
-       |
-   JS + Java / Node.js (Full Stack)
-```
-
-Edit in code. Switch to the visual canvas. Drag, connect, rearrange. Switch back. **Nothing is lost.** This is the "graphical escape hatch" that makes VisualLogic accessible to everyone — from senior engineers to people who've never written a line of code.
-
----
-
-## VL-Code: The AI IDE
-
-**VL-Code** is the AI IDE for VisualLogic — a complete development environment where the LLM is not just an assistant, but the **core execution engine**.
-
-### Non-Linear Workflow Engine
-
-Unlike simple plan-then-execute tools, VL-Code uses **visual workflow DAGs** (Directed Acyclic Graphs). Each node can:
-
-- Call an LLM with targeted context
-- Spawn sub-agents for parallel tasks
-- Branch conditionally on results
-- Loop over collections (files, components, services)
-- Fork into parallel execution paths
-
-These workflows are fully visual. You see every node, every data flow, every decision point. They drive **every phase**: development, testing, debugging, and deployment.
-
-<p align="center">
-  <img src="https://raw.githubusercontent.com/VisualLogic-AI/VisualLogic.ai-VL/main/assets/images/vl-code-flow-editor.png" alt="VL-Code Flow Editor — Visual workflow DAG for multi-agent orchestration" width="90%"/>
-  <br/>
-  <em>Flow Editor — Visual workflow DAG with multi-agent orchestration</em>
-</p>
-
-<p align="center">
-  <img src="https://raw.githubusercontent.com/VisualLogic-AI/VisualLogic.ai-VL/main/assets/images/vl-code-meta-editor.png" alt="VL-Code Meta Editor — High-level architecture and agent pipeline view" width="90%"/>
-  <br/>
-  <em>Meta Editor — Architecture overview and agent pipeline visualization</em>
-</p>
-
-### Semantic Intelligence
-
-VL-Code doesn't just store files — it understands them:
-
-- **Real-time symbol index** — every declaration, reference, and variable tracked across the project
-- **Dependency graph** — automatic context loading based on file relationships
-- **Blueprint architecture** — living PRD, service map, and data model injected into every AI interaction
-- **Auto-fix engine** — syntax issues detected and repaired automatically
-
-### Developer Experience
-
-- Go-to-definition across all VL file types
-- Find all references for any symbol
-- Context-aware autocomplete
-- Impact analysis before renaming or removing
-- Session persistence across restarts
-- Multi-workspace project management
-
----
-
-## From Development to Production
-
-VisualLogic applications aren't prototypes — they are production-ready:
-
-1. **Develop** — full IDE experience with AI generation and visual editing
-2. **Compile** — submit to the VL compiler, get instant preview URLs
-3. **Test** — automated browser-based verification via Playwright integration
-4. **Debug** — visual workflow tracing and impact analysis
-5. **Deploy** — publish to the VL Platform for production access
-
----
-
-## Open Source Strategy
-
-| Layer | Status |
-|-------|--------|
-| VL Language Specification | Open |
-| VL Grammar & Parser | Open |
-| VL to Graph Mapping | Open |
-| AI Optimization Patches | Closed |
-| AI IDE (VL-Code) | Closed |
-| Graphic IDE | Closed |
-| Cloud Compiler | Closed |
-
-The VL language specification and core parsing infrastructure are open, enabling the community to build tools, integrations, and extensions around the VL ecosystem.
-
----
-
-## Technical Stack
-
-- **Runtime**: Node.js + Express with SSE streaming
-- **Editor**: CodeMirror 5 (locally served, no CDN dependency)
-- **AI**: Anthropic Claude with prompt caching (47K-token VL spec)
-- **Architecture**: 4-segment prompt design for optimal token efficiency
-- **Integration**: MCP (Model Context Protocol) compatible, extensible skills system
-
----
-
-## Who Is VisualLogic For?
-
-| Audience | Value |
-|----------|-------|
-| **AI-native developers** | Leverage deterministic AI generation for rapid full-stack development |
-| **Non-technical creators** | Build real applications through visual interfaces and natural language |
-| **Enterprise teams** | Standardize on a structured, auditable, AI-native development platform |
-| **Researchers** | Explore deterministic AI programming and language-graph reversibility |
-| **Platform builders** | Build on open VL specifications for custom tooling and integrations |
-
----
-
-## Get Started
-
-- **Web Editor**: [editor.visuallogic.ai](https://editor.visuallogic.ai/)
-- **Community**: [Discord](https://discord.com/invite/KdaVtR7pzv)
-- **Tutorials**: [YouTube Playlist](https://www.youtube.com/playlist?list=PLJE6c8wBknRnCZIRv_VFa1dYswTSqoW21)
-
----
-
-<p align="center">
-  <strong>The future of programming is deterministic AI + visual systems.</strong><br/>
-  <em>Build anything. Ship everything.</em>
-</p>
+- [VL-Code Runtime](https://github.com/VisualLogic-AI/VL-Code)
+- [VisualLogic Website](https://editor.visuallogic.ai/)
+- [YouTube Playlist](https://www.youtube.com/playlist?list=PLJE6c8wBknRnCZIRv_VFa1dYswTSqoW21)
+- [Discord Community](https://discord.com/invite/KdaVtR7pzv)

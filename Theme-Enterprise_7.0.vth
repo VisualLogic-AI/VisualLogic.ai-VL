@@ -1,0 +1,347 @@
+// VL_VERSION:4.1
+<Theme-Enterprise-7.0>
+
+# Meta
+mode:"light"
+version:"7.0.0"
+styleSpaceVersion:"2.0"
+base_theme:"Platform/Theme-Default-Light@1"
+profile:"enterprise"
+
+# Point Slot Values
+
+// intent
+intent.primary.intentFg:#2563EB
+intent.primary.intentBg:#2563EB
+intent.primary.intentBorder:#2563EB
+intent.primary.intentOnBg:#FFFFFF
+intent.primary.intentFocusRing:0 0 0 3px rgba(37,99,235,0.24)
+intent.primary.intentSubtleBg:#DBEAFE
+
+intent.neutral.intentFg:#0F172A
+intent.neutral.intentBg:#F1F5F9
+intent.neutral.intentBorder:#E2E8F0
+intent.neutral.intentOnBg:#0F172A
+intent.neutral.intentFocusRing:0 0 0 3px rgba(37,99,235,0.24)
+intent.neutral.intentSubtleBg:#F8FAFC
+
+intent.success.intentFg:#10B981
+intent.success.intentBg:#10B981
+intent.success.intentBorder:#10B981
+intent.success.intentOnBg:#FFFFFF
+intent.success.intentFocusRing:0 0 0 3px rgba(16,185,129,0.24)
+intent.success.intentSubtleBg:#ECFDF5
+
+intent.warning.intentFg:#F59E0B
+intent.warning.intentBg:#F59E0B
+intent.warning.intentBorder:#F59E0B
+intent.warning.intentOnBg:#FFFFFF
+intent.warning.intentFocusRing:0 0 0 3px rgba(245,158,11,0.24)
+intent.warning.intentSubtleBg:#FEF3C7
+
+intent.danger.intentFg:#EF4444
+intent.danger.intentBg:#EF4444
+intent.danger.intentBorder:#EF4444
+intent.danger.intentOnBg:#FFFFFF
+intent.danger.intentFocusRing:0 0 0 3px rgba(239,68,68,0.24)
+intent.danger.intentSubtleBg:#FEF2F2
+
+intent.info.intentFg:#3B82F6
+intent.info.intentBg:#3B82F6
+intent.info.intentBorder:#3B82F6
+intent.info.intentOnBg:#FFFFFF
+intent.info.intentFocusRing:0 0 0 3px rgba(59,130,246,0.24)
+intent.info.intentSubtleBg:#EFF6FF
+
+intent.inverse.intentFg:#FFFFFF
+intent.inverse.intentBg:#0F172A
+intent.inverse.intentBorder:#0F172A
+intent.inverse.intentOnBg:#FFFFFF
+intent.inverse.intentFocusRing:0 0 0 3px rgba(255,255,255,0.32)
+intent.inverse.intentSubtleBg:#1E293B
+
+// emphasis
+emphasis.filled.emphasisBg:@intent.intentBg
+emphasis.filled.emphasisFg:@intent.intentOnBg
+emphasis.filled.emphasisBorderColor:transparent
+emphasis.filled.emphasisBorderWidth:0
+emphasis.filled.emphasisTextDecoration:none
+emphasis.filled.emphasisShadow:none
+emphasis.filled.emphasisBgImage:none
+
+emphasis.outlined.emphasisBg:transparent
+emphasis.outlined.emphasisFg:@intent.intentFg
+emphasis.outlined.emphasisBorderColor:@intent.intentBorder
+emphasis.outlined.emphasisBorderWidth:1px
+emphasis.outlined.emphasisTextDecoration:none
+emphasis.outlined.emphasisShadow:none
+emphasis.outlined.emphasisBgImage:none
+
+emphasis.tonal.emphasisBg:@intent.intentSubtleBg
+emphasis.tonal.emphasisFg:@intent.intentFg
+emphasis.tonal.emphasisBorderColor:transparent
+emphasis.tonal.emphasisBorderWidth:0
+emphasis.tonal.emphasisTextDecoration:none
+emphasis.tonal.emphasisShadow:none
+emphasis.tonal.emphasisBgImage:none
+
+emphasis.ghost.emphasisBg:transparent
+emphasis.ghost.emphasisFg:@intent.intentFg
+emphasis.ghost.emphasisBorderColor:#E2E8F0
+emphasis.ghost.emphasisBorderWidth:1px
+emphasis.ghost.emphasisTextDecoration:none
+emphasis.ghost.emphasisShadow:none
+emphasis.ghost.emphasisBgImage:none
+
+emphasis.text.emphasisBg:transparent
+emphasis.text.emphasisFg:@intent.intentFg
+emphasis.text.emphasisBorderColor:transparent
+emphasis.text.emphasisBorderWidth:0
+emphasis.text.emphasisTextDecoration:none
+emphasis.text.emphasisShadow:none
+emphasis.text.emphasisBgImage:none
+
+// shape
+shape.default.shapeRadius:8px
+shape.pill.shapeRadius:9999px
+shape.square.shapeRadius:0
+shape.soft.shapeRadius:12px
+shape.sharp.shapeRadius:4px
+
+// surface (all 5 points x 16 slots)
+surface.solid.surfaceBg:#FFFFFF
+surface.solid.surfaceBorder:#E2E8F0
+surface.solid.surfaceShadow:none
+surface.solid.surfaceBackdrop:transparent
+surface.solid.surfaceBgImage:none
+surface.solid.surfaceBgRepeat:no-repeat
+surface.solid.surfaceBgPosition:center
+surface.solid.surfaceBgSize:cover
+surface.solid.surfaceAccentBorderStart:0 solid transparent
+surface.solid.surfaceAccentBorderEnd:0 solid transparent
+surface.solid.surfaceDividerTop:1px solid #E2E8F0
+surface.solid.surfaceDividerBottom:1px solid #E2E8F0
+surface.solid.surfaceSideRailBg:transparent
+surface.solid.surfaceSideRailWidth:0
+surface.solid.surfaceBorderStyle:solid
+surface.solid.surfaceBorderWidth:1px
+
+surface.subtle.surfaceBg:#F8FAFC
+surface.subtle.surfaceBorder:#E2E8F0
+surface.subtle.surfaceShadow:none
+surface.subtle.surfaceBackdrop:transparent
+surface.subtle.surfaceBgImage:none
+surface.subtle.surfaceBgRepeat:no-repeat
+surface.subtle.surfaceBgPosition:center
+surface.subtle.surfaceBgSize:cover
+surface.subtle.surfaceAccentBorderStart:0 solid transparent
+surface.subtle.surfaceAccentBorderEnd:0 solid transparent
+surface.subtle.surfaceDividerTop:1px solid #E2E8F0
+surface.subtle.surfaceDividerBottom:1px solid #E2E8F0
+surface.subtle.surfaceSideRailBg:#E2E8F0
+surface.subtle.surfaceSideRailWidth:0
+surface.subtle.surfaceBorderStyle:solid
+surface.subtle.surfaceBorderWidth:1px
+
+surface.elevated.surfaceBg:#FFFFFF
+surface.elevated.surfaceBorder:#E2E8F0
+surface.elevated.surfaceShadow:0 4px 12px rgba(0,0,0,0.08)
+surface.elevated.surfaceBackdrop:transparent
+surface.elevated.surfaceBgImage:none
+surface.elevated.surfaceBgRepeat:no-repeat
+surface.elevated.surfaceBgPosition:center
+surface.elevated.surfaceBgSize:cover
+surface.elevated.surfaceAccentBorderStart:0 solid transparent
+surface.elevated.surfaceAccentBorderEnd:0 solid transparent
+surface.elevated.surfaceDividerTop:1px solid #E2E8F0
+surface.elevated.surfaceDividerBottom:1px solid #E2E8F0
+surface.elevated.surfaceSideRailBg:transparent
+surface.elevated.surfaceSideRailWidth:0
+surface.elevated.surfaceBorderStyle:solid
+surface.elevated.surfaceBorderWidth:1px
+
+surface.overlay.surfaceBg:#FFFFFF
+surface.overlay.surfaceBorder:#CBD5E1
+surface.overlay.surfaceShadow:0 10px 40px rgba(0,0,0,0.12)
+surface.overlay.surfaceBackdrop:rgba(15,23,42,0.45)
+surface.overlay.surfaceBgImage:none
+surface.overlay.surfaceBgRepeat:no-repeat
+surface.overlay.surfaceBgPosition:center
+surface.overlay.surfaceBgSize:cover
+surface.overlay.surfaceAccentBorderStart:0 solid transparent
+surface.overlay.surfaceAccentBorderEnd:0 solid transparent
+surface.overlay.surfaceDividerTop:1px solid #E2E8F0
+surface.overlay.surfaceDividerBottom:1px solid #E2E8F0
+surface.overlay.surfaceSideRailBg:transparent
+surface.overlay.surfaceSideRailWidth:0
+surface.overlay.surfaceBorderStyle:solid
+surface.overlay.surfaceBorderWidth:1px
+
+surface.dark.surfaceBg:#0F172A
+surface.dark.surfaceBorder:rgba(255,255,255,0.12)
+surface.dark.surfaceShadow:none
+surface.dark.surfaceBackdrop:rgba(2,6,23,0.6)
+surface.dark.surfaceBgImage:none
+surface.dark.surfaceBgRepeat:no-repeat
+surface.dark.surfaceBgPosition:center
+surface.dark.surfaceBgSize:cover
+surface.dark.surfaceAccentBorderStart:2px solid rgba(255,255,255,0.16)
+surface.dark.surfaceAccentBorderEnd:0 solid transparent
+surface.dark.surfaceDividerTop:1px solid rgba(255,255,255,0.12)
+surface.dark.surfaceDividerBottom:1px solid rgba(255,255,255,0.12)
+surface.dark.surfaceSideRailBg:rgba(255,255,255,0.06)
+surface.dark.surfaceSideRailWidth:0
+surface.dark.surfaceBorderStyle:solid
+surface.dark.surfaceBorderWidth:1px
+
+// textRole (all 6 points x 7 slots)
+textRole.body.textRoleColor:#0F172A
+textRole.body.textRoleColorOnDark:#FFFFFF
+textRole.body.textRoleAlpha:1
+textRole.body.textRoleTransform:none
+textRole.body.textRoleBgImage:none
+textRole.body.textRoleBgClip:border-box
+textRole.body.textRoleFillColor:none
+
+textRole.caption.textRoleColor:#64748B
+textRole.caption.textRoleColorOnDark:rgba(255,255,255,0.72)
+textRole.caption.textRoleAlpha:1
+textRole.caption.textRoleTransform:uppercase
+textRole.caption.textRoleBgImage:none
+textRole.caption.textRoleBgClip:border-box
+textRole.caption.textRoleFillColor:none
+
+textRole.hint.textRoleColor:#94A3B8
+textRole.hint.textRoleColorOnDark:rgba(255,255,255,0.56)
+textRole.hint.textRoleAlpha:1
+textRole.hint.textRoleTransform:none
+textRole.hint.textRoleBgImage:none
+textRole.hint.textRoleBgClip:border-box
+textRole.hint.textRoleFillColor:none
+
+textRole.muted.textRoleColor:rgba(15,23,42,0.56)
+textRole.muted.textRoleColorOnDark:rgba(255,255,255,0.56)
+textRole.muted.textRoleAlpha:0.56
+textRole.muted.textRoleTransform:none
+textRole.muted.textRoleBgImage:none
+textRole.muted.textRoleBgClip:border-box
+textRole.muted.textRoleFillColor:none
+
+textRole.weak.textRoleColor:rgba(15,23,42,0.36)
+textRole.weak.textRoleColorOnDark:rgba(255,255,255,0.36)
+textRole.weak.textRoleAlpha:0.36
+textRole.weak.textRoleTransform:none
+textRole.weak.textRoleBgImage:none
+textRole.weak.textRoleBgClip:border-box
+textRole.weak.textRoleFillColor:none
+
+textRole.contrast.textRoleColor:#0B1220
+textRole.contrast.textRoleColorOnDark:#FFFFFF
+textRole.contrast.textRoleAlpha:1
+textRole.contrast.textRoleTransform:none
+textRole.contrast.textRoleBgImage:none
+textRole.contrast.textRoleBgClip:border-box
+textRole.contrast.textRoleFillColor:none
+
+// size (all 3 points x 7 slots)
+size.sm.sizePaddingY:4px
+size.sm.sizePaddingX:12px
+size.sm.sizeFontSize:13px
+size.sm.sizeFontWeight:500
+size.sm.sizeLineHeight:1.4
+size.sm.sizeMinHeight:32px
+size.sm.sizeGap:6px
+
+size.md.sizePaddingY:8px
+size.md.sizePaddingX:16px
+size.md.sizeFontSize:14px
+size.md.sizeFontWeight:500
+size.md.sizeLineHeight:1.5
+size.md.sizeMinHeight:40px
+size.md.sizeGap:8px
+
+size.lg.sizePaddingY:12px
+size.lg.sizePaddingX:24px
+size.lg.sizeFontSize:16px
+size.lg.sizeFontWeight:500
+size.lg.sizeLineHeight:1.5
+size.lg.sizeMinHeight:48px
+size.lg.sizeGap:10px
+
+// affordance (all 5 points x 14 slots)
+affordance.passive.cursor:default
+affordance.passive.hoverBg:transparent
+affordance.passive.hoverBorder:transparent
+affordance.passive.hoverShadow:none
+affordance.passive.hoverOverlay:none
+affordance.passive.activeBg:transparent
+affordance.passive.activeBorder:transparent
+affordance.passive.activeShadow:none
+affordance.passive.activeOverlay:none
+affordance.passive.focusRing:none
+affordance.passive.selectedBg:transparent
+affordance.passive.selectedBorder:transparent
+affordance.passive.selectedShadow:none
+affordance.passive.selectedOverlay:none
+
+affordance.listitem.cursor:pointer
+affordance.listitem.hoverBg:transparent
+affordance.listitem.hoverBorder:transparent
+affordance.listitem.hoverShadow:none
+affordance.listitem.hoverOverlay:rgba(15,23,42,0.04)
+affordance.listitem.activeBg:transparent
+affordance.listitem.activeBorder:transparent
+affordance.listitem.activeShadow:none
+affordance.listitem.activeOverlay:rgba(15,23,42,0.08)
+affordance.listitem.focusRing:0 0 0 3px rgba(37,99,235,0.18)
+affordance.listitem.selectedBg:@intent.intentSubtleBg
+affordance.listitem.selectedBorder:@intent.intentBorder
+affordance.listitem.selectedShadow:none
+affordance.listitem.selectedOverlay:none
+
+affordance.navitem.cursor:pointer
+affordance.navitem.hoverBg:transparent
+affordance.navitem.hoverBorder:transparent
+affordance.navitem.hoverShadow:none
+affordance.navitem.hoverOverlay:rgba(37,99,235,0.08)
+affordance.navitem.activeBg:transparent
+affordance.navitem.activeBorder:transparent
+affordance.navitem.activeShadow:none
+affordance.navitem.activeOverlay:rgba(37,99,235,0.12)
+affordance.navitem.focusRing:0 0 0 3px rgba(37,99,235,0.24)
+affordance.navitem.selectedBg:@intent.intentSubtleBg
+affordance.navitem.selectedBorder:@intent.intentBorder
+affordance.navitem.selectedShadow:none
+affordance.navitem.selectedOverlay:none
+
+affordance.actionable.cursor:pointer
+affordance.actionable.hoverBg:transparent
+affordance.actionable.hoverBorder:transparent
+affordance.actionable.hoverShadow:0 3px 10px rgba(37,99,235,0.14), 0 1px 3px rgba(0,0,0,0.06), inset 0 0 0 9999px rgba(255,255,255,0.10)
+affordance.actionable.hoverOverlay:none
+affordance.actionable.activeBg:transparent
+affordance.actionable.activeBorder:transparent
+affordance.actionable.activeShadow:inset 0 0 0 9999px rgba(15,23,42,0.14)
+affordance.actionable.activeOverlay:none
+affordance.actionable.focusRing:@intent.intentFocusRing
+affordance.actionable.selectedBg:transparent
+affordance.actionable.selectedBorder:transparent
+affordance.actionable.selectedShadow:none
+affordance.actionable.selectedOverlay:none
+
+affordance.selectable.cursor:pointer
+affordance.selectable.hoverBg:transparent
+affordance.selectable.hoverBorder:@intent.intentBorder
+affordance.selectable.hoverShadow:none
+affordance.selectable.hoverOverlay:rgba(37,99,235,0.04)
+affordance.selectable.activeBg:transparent
+affordance.selectable.activeBorder:@intent.intentBorder
+affordance.selectable.activeShadow:none
+affordance.selectable.activeOverlay:rgba(37,99,235,0.08)
+affordance.selectable.focusRing:@intent.intentFocusRing
+affordance.selectable.selectedBg:@intent.intentSubtleBg
+affordance.selectable.selectedBorder:@intent.intentBorder
+affordance.selectable.selectedShadow:none
+affordance.selectable.selectedOverlay:none
+
+</Theme-Enterprise-7.0>
