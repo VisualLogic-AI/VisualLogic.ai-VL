@@ -47,6 +47,7 @@ Platform-provided resources are intended to be free for users to use. Community 
 | [VisualLogic-DAG-Harness-Video.mp4](./Videos/VisualLogic-DAG-Harness-Video.mp4) | MP4 | English narrated promo video explaining DAG harness engineering, agent apps, VL, and the free VisualLogic AI IDE |
 | [VisualLogic-DAG-Harness-Video.pdf](./Videos/VisualLogic-DAG-Harness-Video.pdf) | PDF | Slide-by-slide reference export for the narrated video |
 | [VisualLogic-DAG-Harness-Video.pptx](./Videos/VisualLogic-DAG-Harness-Video.pptx) | PowerPoint | Editable source deck for the narrated video |
+| [VisualLogic-DAG-Harness-Video-YouTube.md](./Videos/VisualLogic-DAG-Harness-Video-YouTube.md) | Markdown | YouTube title, description, chapters, tags, and thumbnail text options |
 
 ### Articles
 
