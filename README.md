@@ -26,6 +26,7 @@
 | [Theme 7.0.3 Guide](./THEME_7.0.md) | Human-readable overview of the latest enterprise theme contract |
 | [Theme-Enterprise_7.0.3.vth](./Theme-Enterprise_7.0.3.vth) | Importable theme source for current VL projects |
 | [Example Packs](./Examples/README.md) | Five refreshed importable sample projects with `appCaseJsonMap` included |
+| [Marketing Resources](./Marketing/README.md) | English-only decks, positioning, open ecosystem notes, and public promo copy |
 | [Legacy Archive](./Legacy/README.md) | Older VL and theme snapshots kept for reference only |
 
 ## What This Repo Is For
@@ -76,6 +77,10 @@ VisualLogic.ai-VL/
 ├── THEME_7.0.md
 ├── Theme-Enterprise_7.0.3.vth
 ├── Theme-Enterprise_7.0.vth
+├── Marketing/
+│   ├── README.md
+│   ├── Articles/
+│   └── Decks/
 ├── Examples/
 │   ├── README.md
 │   ├── VL_CourseScheduler_WithCaseJsonMap.zip
@@ -119,6 +124,12 @@ Each pack includes:
 - a focused feature scenario for manual testing
 
 Older sample packs were moved to [`Examples/legacy/`](./Examples/legacy/README.md) instead of being deleted outright.
+
+## Marketing Resources
+
+The [`Marketing/`](./Marketing/README.md) folder contains English-only public materials for explaining VL, VLC, DAG Harness Engineering, the open resource ecosystem, and the free local IDE.
+
+It includes editable PowerPoint decks, PDF exports, positioning notes, open ecosystem notes, and short promo copy for public launch channels.
 
 ## Build with the Current VLC Runtime
 
