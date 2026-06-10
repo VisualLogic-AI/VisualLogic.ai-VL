@@ -1,6 +1,6 @@
 # VisualLogic Marketing Resources
 
-This folder contains public English-only materials for explaining VisualLogic, VL, VLC, and the DAG-centered AI software generation workflow.
+This folder contains public materials for explaining VisualLogic, VL, VLC, and the DAG-centered AI software generation workflow.
 
 ## Core Message
 
@@ -46,8 +46,10 @@ Platform-provided resources are intended to be free for users to use. Community 
 | --- | --- |
 | [Positioning.md](./Articles/Positioning.md) | Product positioning and enterprise landing narrative |
 | [Open-Ecosystem.md](./Articles/Open-Ecosystem.md) | Open resource model: DAGs, components, tools, skills, themes, and docs |
+| [DAG-Harness-vs-Context-Patching-EN.md](./Articles/DAG-Harness-vs-Context-Patching-EN.md) | English comparison: DAG harness vs. context and memory patching |
+| [DAG-Harness-vs-Context-Patching-ZH.md](./Articles/DAG-Harness-vs-Context-Patching-ZH.md) | Chinese comparison: DAG harness vs. context and memory patching |
 | [Promo-Copy.md](./Articles/Promo-Copy.md) | Ready-to-adapt short public copy |
 
 ## Language Rule
 
-All files added here should be English-only. Do not add bilingual drafts, Chinese deck sources, production logs, temporary exports, or files with non-English filenames.
+Public narrative documents should be maintained as language pairs where practical: one English file and one Chinese file, with ASCII filenames and clear `EN` / `ZH` suffixes. Do not mix languages inside the same document unless the document is explicitly a translation index. Do not add production logs, temporary exports, or files with non-English filenames.
