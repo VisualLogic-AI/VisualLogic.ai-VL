@@ -40,6 +40,14 @@ Platform-provided resources are intended to be free for users to use. Community 
 | [VL-VLC-Video-Promo-EN.pdf](./Decks/VL-VLC-Video-Promo-EN.pdf) | PDF | Video promo slide deck |
 | [VL-VLC-Video-Promo-EN.pptx](./Decks/VL-VLC-Video-Promo-EN.pptx) | PowerPoint | Editable source for the video promo deck |
 
+### Videos
+
+| File | Format | Purpose |
+| --- | --- | --- |
+| [VisualLogic-DAG-Harness-Video.mp4](./Videos/VisualLogic-DAG-Harness-Video.mp4) | MP4 | English narrated promo video explaining DAG harness engineering, agent apps, VL, and the free VisualLogic AI IDE |
+| [VisualLogic-DAG-Harness-Video.pdf](./Videos/VisualLogic-DAG-Harness-Video.pdf) | PDF | Slide-by-slide reference export for the narrated video |
+| [VisualLogic-DAG-Harness-Video.pptx](./Videos/VisualLogic-DAG-Harness-Video.pptx) | PowerPoint | Editable source deck for the narrated video |
+
 ### Articles
 
 | File | Purpose |
