@@ -6,7 +6,7 @@
 
 <p align="center">
   <strong>The public reference repo for Visual Language (VL) assets.</strong><br/>
-  Latest snapshot in this repo: VL 4.1, Theme 7.0, and refreshed importable example packs.
+  Latest snapshot in this repo: VL 4.3.1, Theme 7.0.3, and refreshed importable example packs.
 </p>
 
 <p align="center">
@@ -22,9 +22,9 @@
 
 | Asset | What it gives you |
 | --- | --- |
-| [VL 4.1 Reference](./VL_VERSION_4.1.md) | Current VL syntax snapshot used by the latest VLC runtime and sample packs |
-| [Theme 7.0 Guide](./THEME_7.0.md) | Human-readable overview of the latest enterprise theme contract |
-| [Theme-Enterprise_7.0.vth](./Theme-Enterprise_7.0.vth) | Importable theme source for VL 4.1 projects |
+| [VL 4.3.1 Reference](./VL_VERSION_4.3.1.md) | Current VL syntax snapshot used by the latest VLC runtime and sample packs |
+| [Theme 7.0.3 Guide](./THEME_7.0.md) | Human-readable overview of the latest enterprise theme contract |
+| [Theme-Enterprise_7.0.3.vth](./Theme-Enterprise_7.0.3.vth) | Importable theme source for current VL projects |
 | [Example Packs](./Examples/README.md) | Five refreshed importable sample projects with `appCaseJsonMap` included |
 | [Legacy Archive](./Legacy/README.md) | Older VL and theme snapshots kept for reference only |
 
@@ -43,8 +43,10 @@ If you want to run the current local IDE runtime, use the public [VL-Code reposi
 
 ```text
 VisualLogic.ai-VL/
+├── VL_VERSION_4.3.1.md
 ├── VL_VERSION_4.1.md
 ├── THEME_7.0.md
+├── Theme-Enterprise_7.0.3.vth
 ├── Theme-Enterprise_7.0.vth
 ├── Examples/
 │   ├── README.md
@@ -61,7 +63,7 @@ VisualLogic.ai-VL/
 
 Visual Language (VL) is a deterministic, component-oriented language for full-stack application generation.
 
-The current public snapshot in this repo is **VL 4.1** and covers six file types:
+The current public snapshot in this repo is **VL 4.3.1** and covers six file types:
 
 | Extension | Purpose |
 | --- | --- |

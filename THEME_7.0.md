@@ -1,19 +1,19 @@
-# Theme 7.0
+# Theme 7.0.3
 
-This repository's latest public theme snapshot is [`Theme-Enterprise_7.0.vth`](./Theme-Enterprise_7.0.vth).
+This repository's latest public theme snapshot is [`Theme-Enterprise_7.0.3.vth`](./Theme-Enterprise_7.0.3.vth).
 
 ## Snapshot
 
-- VL header: `// VL_VERSION:4.1`
+- VL header: `// VL_VERSION:4.2.2`
 - Theme root: `<Theme-Enterprise-7.0>`
-- Theme version: `7.0.0`
+- Theme version: `7.0.3`
 - Style space version: `2.0`
 - Base theme: `Platform/Theme-Default-Light@1`
 - Profile: `enterprise`
 
 ## What Is Included
 
-Theme 7.0 is a point-slot based design token contract for VL 4.1 projects. The current file is organized around these slot families:
+Theme 7.0.3 is a point-slot based design token contract for current VL projects. The current file is organized around these slot families:
 
 | Family | Purpose |
 | --- | --- |
@@ -36,12 +36,12 @@ ProjectName/
 ├── Services/
 ├── Database/
 └── Theme/
-    └── Theme-Enterprise_7.0.vth
+    └── Theme-Enterprise_7.0.3.vth
 ```
 
 Recommended pairing:
 
-- use `VL_VERSION:4.1` across `.vx`, `.sc`, `.cp`, `.vs`, `.vdb`, and `.vth`
+- use a consistent `VL_VERSION` across `.vx`, `.sc`, `.cp`, `.vs`, `.vdb`, and `.vth`
 - keep the theme file in the project's `Theme/` directory
 - reference the theme from the app entry according to your project conventions
 
@@ -49,12 +49,12 @@ Recommended pairing:
 
 The newer sample packs in [`Examples/`](./Examples/README.md) were produced against the same generation baseline:
 
-- VL 4.1 source
+- current VL source
 - Theme 7.0 token model
 - bundled `appCaseJsonMap` snapshots for easier inspection in VLC
 
 ## Related Files
 
-- [VL 4.1 Reference](./VL_VERSION_4.1.md)
-- [Theme-Enterprise_7.0.vth](./Theme-Enterprise_7.0.vth)
+- [VL 4.3.1 Reference](./VL_VERSION_4.3.1.md)
+- [Theme-Enterprise_7.0.3.vth](./Theme-Enterprise_7.0.3.vth)
 - [Example Packs](./Examples/README.md)
