@@ -10,7 +10,7 @@
 </p>
 
 <p align="center">
-  <a href="https://editor.visuallogic.ai/">Website</a> &nbsp;|&nbsp;
+  <a href="https://www.visuallogic.ai">Website</a> &nbsp;|&nbsp;
   <a href="https://github.com/VisualLogic-AI/VL-Code">VL-Code Runtime</a> &nbsp;|&nbsp;
   <a href="https://www.youtube.com/playlist?list=PLJE6c8wBknRnCZIRv_VFa1dYswTSqoW21">YouTube</a> &nbsp;|&nbsp;
   <a href="https://discord.com/invite/KdaVtR7pzv">Discord</a>
@@ -42,7 +42,7 @@ If you want to run the current local IDE runtime, use the public [VL-Code reposi
 
 ## Why VL
 
-VL is an AI-native programming language: it is designed to be easy for humans to read and easy for agents to generate, inspect, and modify with low ambiguity.
+VL is an AI-native programming language — the deterministic application language of the VisualLogic Agent OS. It is designed to be easy for humans to read and easy for agents to generate, inspect, and modify with low ambiguity.
 
 Its main advantage is not just syntax. VL is structured as a layered, decoupled system. Apps, sections, components, services, database models, and themes live in separate files with explicit contracts. Once a service contract is stable, multiple service domains can be generated or changed in parallel. The same is true on the frontend: each section or component can be handled independently as long as its public props, events, and methods are clear. This makes VL a strong fit for high-concurrency software development workflows where many agents or developers work on different parts of the same product at once.
 
@@ -147,6 +147,6 @@ That guide includes:
 ## Related Links
 
 - [VL-Code Runtime](https://github.com/VisualLogic-AI/VL-Code)
-- [VisualLogic Website](https://editor.visuallogic.ai/)
+- [VisualLogic Website](https://www.visuallogic.ai)
 - [YouTube Playlist](https://www.youtube.com/playlist?list=PLJE6c8wBknRnCZIRv_VFa1dYswTSqoW21)
 - [Discord Community](https://discord.com/invite/KdaVtR7pzv)
