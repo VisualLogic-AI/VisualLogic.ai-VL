@@ -2,11 +2,11 @@
   <img src="https://raw.githubusercontent.com/VisualLogic-AI/VisualLogic.ai-VL/main/assets/logo.png" alt="VisualLogic.ai" width="420"/>
 </p>
 
-<h1 align="center">VisualLogic.ai — VL Language, Theme, and Sample Packs</h1>
+<h1 align="center">VisualLogic.ai — VL Language, Workflow, Theme, and Sample Packs</h1>
 
 <p align="center">
   <strong>The public reference repo for Visual Language (VL) assets.</strong><br/>
-  Latest snapshot in this repo: VL 4.3.1, Theme 7.0.3, and refreshed importable example packs.
+  Unified public specification release: 4.16, with VL syntax, Workflow Spec, Theme 7.0.3, and refreshed importable example packs.
 </p>
 
 <p align="center">
@@ -22,7 +22,8 @@
 
 | Asset | What it gives you |
 | --- | --- |
-| [VL 4.3.1 Reference](./VL_VERSION_4.3.1.md) | Current VL syntax snapshot used by the latest VLC runtime and sample packs |
+| [VL Syntax 4.16](./VL_VERSION_4.16.md) | Unified public 4.16 syntax reference; executable VL files use `VL_VERSION:4.4.3` |
+| [Workflow Spec 4.16](./WORKFLOW_SPEC_4.16.md) | Unified public 4.16 workflow reference; executable workflow graphs use schema `4.1` |
 | [Theme 7.0.3 Guide](./THEME_7.0.md) | Human-readable overview of the latest enterprise theme contract |
 | [Theme-Enterprise_7.0.3.vth](./Theme-Enterprise_7.0.3.vth) | Importable theme source for current VL projects |
 | [Example Packs](./Examples/README.md) | Five refreshed importable sample projects with `appCaseJsonMap` included |
@@ -34,11 +35,12 @@
 This repository is the public landing zone for the parts of VisualLogic that are most useful to builders and evaluators:
 
 - the latest open VL syntax reference
+- the latest open Workflow Spec
 - the latest public theme snapshot
 - importable project packs people can download and test locally
 - supporting docs that explain how these assets fit together
 
-If you want to run the current local IDE runtime, use the public [VL-Code repository](https://github.com/VisualLogic-AI/VL-Code). If you want the language, theme, and sample content itself, this is the repo.
+If you want to run the current local IDE runtime, use the public [VL-Code repository](https://github.com/VisualLogic-AI/VL-Code). If you want the language, workflow, theme, and sample content itself, this is the repo.
 
 ## Why VL
 
@@ -72,8 +74,8 @@ This is stronger than sending one agent at one isolated task. The DAG represents
 
 ```text
 VisualLogic.ai-VL/
-├── VL_VERSION_4.3.1.md
-├── VL_VERSION_4.1.md
+├── VL_VERSION_4.16.md
+├── WORKFLOW_SPEC_4.16.md
 ├── THEME_7.0.md
 ├── Theme-Enterprise_7.0.3.vth
 ├── Theme-Enterprise_7.0.vth
@@ -96,7 +98,7 @@ VisualLogic.ai-VL/
 
 Visual Language (VL) is a deterministic, component-oriented language for full-stack application generation.
 
-The current public snapshot in this repo is **VL 4.3.1** and covers six file types:
+The current unified public specification release is **4.16**. To preserve compatibility with the released toolchain, VL source files use the executable header `// VL_VERSION:4.4.3`, while workflow JSON uses the executable schema field `"version": "4.1"`. The VL syntax covers six file types:
 
 | Extension | Purpose |
 | --- | --- |
