@@ -6,7 +6,7 @@
 
 <p align="center">
   <strong>The public reference repo for Visual Language (VL) assets.</strong><br/>
-  Unified public specification release: 4.16, with VL syntax, Workflow Spec, Theme 7.0.3, and refreshed importable example packs.
+  Latest snapshot in this repo: VL 4.3.1, Workflow Spec 4.16, Theme 7.0.3, and refreshed importable example packs.
 </p>
 
 <p align="center">
@@ -22,8 +22,8 @@
 
 | Asset | What it gives you |
 | --- | --- |
-| [VL Syntax 4.16](./VL_VERSION_4.16.md) | Unified public 4.16 syntax reference; executable VL files use `VL_VERSION:4.4.3` |
-| [Workflow Spec 4.16](./WORKFLOW_SPEC_4.16.md) | Unified public 4.16 workflow reference; executable workflow graphs use schema `4.1` |
+| [VL 4.3.1 Reference](./VL_VERSION_4.3.1.md) | Current VL syntax snapshot used by the latest VLC runtime and sample packs |
+| [Workflow Spec 4.16](./WORKFLOW_SPEC_4.16.md) | Current public workflow reference; executable workflow graphs use schema `4.1` |
 | [Theme 7.0.3 Guide](./THEME_7.0.md) | Human-readable overview of the latest enterprise theme contract |
 | [Theme-Enterprise_7.0.3.vth](./Theme-Enterprise_7.0.3.vth) | Importable theme source for current VL projects |
 | [Example Packs](./Examples/README.md) | Five refreshed importable sample projects with `appCaseJsonMap` included |
@@ -74,7 +74,7 @@ This is stronger than sending one agent at one isolated task. The DAG represents
 
 ```text
 VisualLogic.ai-VL/
-├── VL_VERSION_4.16.md
+├── VL_VERSION_4.3.1.md
 ├── WORKFLOW_SPEC_4.16.md
 ├── THEME_7.0.md
 ├── Theme-Enterprise_7.0.3.vth
@@ -98,7 +98,7 @@ VisualLogic.ai-VL/
 
 Visual Language (VL) is a deterministic, component-oriented language for full-stack application generation.
 
-The current unified public specification release is **4.16**. To preserve compatibility with the released toolchain, VL source files use the executable header `// VL_VERSION:4.4.3`, while workflow JSON uses the executable schema field `"version": "4.1"`. The VL syntax covers six file types:
+The current public language snapshot is **VL 4.3.1**, while the current public Workflow Spec release is **4.16**. VL source files use the executable header `// VL_VERSION:4.3.1`, while workflow JSON uses the executable schema field `"version": "4.1"`. The VL syntax covers six file types:
 
 | Extension | Purpose |
 | --- | --- |
